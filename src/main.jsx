@@ -10,10 +10,10 @@ import Loader from "./components/loader/index.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <React.Suspense fallback={<Loader />}>
-      <BrowserRouter>
+    <BrowserRouter>
+      <React.Suspense fallback={<Loader />}>
         <App />
-      </BrowserRouter>
-    </React.Suspense>
+      </React.Suspense>
+    </BrowserRouter>
   </React.StrictMode>
 );
