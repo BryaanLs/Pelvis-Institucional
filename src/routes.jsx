@@ -11,7 +11,7 @@ const AppRoutes = () => {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route
-        path="https://demo-pelvis.netlify.app/QuemSomos"
+        path="https://demo-pelvis.netlify.apphttps://demo-pelvis.netlify.app/QuemSomos"
         element={<QuemSomos />}
       />
       <Route

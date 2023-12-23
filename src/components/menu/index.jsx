@@ -49,13 +49,22 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           <NavLink to="/" end onClick={closeMenu}>
             Página Inicial
           </NavLink>
-          <NavLink to="QuemSomos" onClick={closeMenu}>
+          <NavLink
+            to="https://demo-pelvis.netlify.app/QuemSomos"
+            onClick={closeMenu}
+          >
             Quem somos
           </NavLink>
-          <NavLink to="Tratamento" onClick={closeMenu}>
+          <NavLink
+            to="https://demo-pelvis.netlify.app/Tratamento"
+            onClick={closeMenu}
+          >
             Tratamento
           </NavLink>
-          <NavLink to="ComoFunciona" onClick={closeMenu}>
+          <NavLink
+            to="https://demo-pelvis.netlify.app/ComoFunciona"
+            onClick={closeMenu}
+          >
             Como Funciona
           </NavLink>
         </nav>
@@ -75,7 +84,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
                 Fale Conosco
                 <img src={setaBtn} width="20" alt="seta com fundo branco" />
               </a>
-              <a href="http://localhost:5173/#ourSpace">
+              <a href="/#ourSpace">
                 Nossa Clínica
                 <img src={setaBtn} width="20" alt="seta com fundo branco" />
               </a>
