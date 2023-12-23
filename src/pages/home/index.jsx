@@ -156,7 +156,7 @@ const Home = () => {
         </div>
       </Container>
 
-      <Container sectionClass="ourSpace">
+      <Container sectionClass="ourSpace" id="ourSpace">
         <div className="titleCarrossel">
           <div className="titleCarrosselText">
             <span>Uma clínica acolhedora e agradável!</span>

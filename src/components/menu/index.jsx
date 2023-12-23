@@ -49,14 +49,14 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           <NavLink to="/" end onClick={closeMenu}>
             Página Inicial
           </NavLink>
-          <NavLink to="tratamento" onClick={closeMenu}>
+          <NavLink to="QuemSomos" onClick={closeMenu}>
+            Quem somos
+          </NavLink>
+          <NavLink to="Tratamento" onClick={closeMenu}>
             Tratamento
           </NavLink>
-          <NavLink to="equipe" onClick={closeMenu}>
-            Equipe
-          </NavLink>
-          <NavLink to="quem-somos" onClick={closeMenu}>
-            Quem somos
+          <NavLink to="ComoFunciona" onClick={closeMenu}>
+            Como Funciona
           </NavLink>
         </nav>
 
@@ -75,7 +75,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
                 Fale Conosco
                 <img src={setaBtn} width="20" alt="seta com fundo branco" />
               </a>
-              <a href="#">
+              <a href="http://localhost:5173/#ourSpace">
                 Nossa Clínica
                 <img src={setaBtn} width="20" alt="seta com fundo branco" />
               </a>
