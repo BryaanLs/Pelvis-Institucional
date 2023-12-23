@@ -75,6 +75,9 @@
   right: 0;
   background-color: transparent;
 }
+.specCard button:hover {
+  background-color: transparent;
+}
 
 .CardMain {
   position: relative;

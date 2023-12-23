@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 // import React from "react";
 import "./styles.css";
-import Animation from "../boxAnimation";
+import BoxAnimation from "../boxAnimation";
 
 const PeopleDescription = ({
   foto,
@@ -31,19 +31,19 @@ const PeopleDescription = ({
 
   return (
     <div className={`peopleDescription ${reverse ? "reverse" : ""}`}>
-      <Animation animation={animationUm}>
+      <BoxAnimation animation={animationUm}>
         <div className="peopleDescriptionImg">
           <img src={foto} width="300" height="367" alt={alt} loading="lazy" />
         </div>
-      </Animation>
-      <Animation animation={animationD}>
+      </BoxAnimation>
+      <BoxAnimation animation={animationD}>
         <div className="pDescription">
           <h1>{hUm}</h1>
           <span>{span}</span>
           {renderContent()}
           {children}
         </div>
-      </Animation>
+      </BoxAnimation>
     </div>
   );
 };

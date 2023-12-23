@@ -7,7 +7,7 @@
   border-radius: 1rem;
   padding: 0rem 2rem 5rem;
   position: relative;
-  margin-bottom: 10rem !important;
+  margin-bottom: 15rem !important;
 }
 .cardsHome {
   display: flex;
@@ -73,6 +73,7 @@
 }
 .especialidades {
   display: flex;
+  transition: gap 0.2s ease-in-out;
   justify-content: space-evenly;
   gap: 10rem;
   margin-top: 5rem;
@@ -104,7 +105,7 @@
   min-height: max-content;
   display: flex;
   margin-top: 10rem;
-  padding: 8rem 0 15rem;
+  padding: 8rem 0 15rem !important;
 }
 .ourTeam {
   display: flex;
@@ -261,22 +262,37 @@
 
 @media (max-width: 1600px) {
   .especialidades {
-    gap: 0;
+    gap: 2rem;
   }
 }
-@media (max-width: 1100px) {
-  .especialidades {
-    flex-direction: column;
+@media (max-width: 1350px) {
+  .cardsGoogle {
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
   }
-
-  .ourTeam {
-    padding: 0 1rem;
+  .cardsGoogle .googleCard:nth-child(4),
+  .cardsGoogle .googleCard:nth-child(5),
+  .cardsGoogle .googleCard:nth-child(6) {
+    margin-left: 0;
   }
 
   .ourTeamCards {
-    flex-direction: column;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
     gap: 10rem;
+    place-content: center;
+    place-items: center;
+  }
+}
+@media (max-width: 1300px) {
+  .especialidades {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 1100px) {
+  .especialidades {
+    flex-direction: column;
   }
 
   .especialidadesMain > h3,
@@ -316,17 +332,7 @@
     width: 100%;
   }
 }
-@media (max-width: 1350px) {
-  .cardsGoogle {
-    grid-template-columns: repeat(2, 380px);
-    justify-content: center;
-  }
-  .cardsGoogle .googleCard:nth-child(4),
-  .cardsGoogle .googleCard:nth-child(5),
-  .cardsGoogle .googleCard:nth-child(6) {
-    margin-left: 0;
-  }
-}
+
 @media (max-width: 950px) {
   .cardsGoogle {
     display: flex;
@@ -341,6 +347,17 @@
 
   .titleCardsHomeCtas a {
     width: 100%;
+  }
+
+  .ourTeam {
+    padding: 0 1rem;
+  }
+
+  .ourTeamCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10rem;
   }
 }
 @media (max-width: 800px) {
