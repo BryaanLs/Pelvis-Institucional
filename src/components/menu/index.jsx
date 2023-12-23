@@ -49,22 +49,13 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           <NavLink to="/" end onClick={closeMenu}>
             Página Inicial
           </NavLink>
-          <NavLink
-            to="https://demo-pelvis.netlify.app/QuemSomos"
-            onClick={closeMenu}
-          >
+          <NavLink to="QuemSomos" onClick={closeMenu}>
             Quem somos
           </NavLink>
-          <NavLink
-            to="https://demo-pelvis.netlify.app/Tratamento"
-            onClick={closeMenu}
-          >
+          <NavLink to="Tratamento" onClick={closeMenu}>
             Tratamento
           </NavLink>
-          <NavLink
-            to="https://demo-pelvis.netlify.app/ComoFunciona"
-            onClick={closeMenu}
-          >
+          <NavLink to="ComoFunciona" onClick={closeMenu}>
             Como Funciona
           </NavLink>
         </nav>

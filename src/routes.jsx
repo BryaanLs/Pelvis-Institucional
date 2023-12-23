@@ -10,18 +10,10 @@ const AppRoutes = () => {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route
-        path="https://demo-pelvis.netlify.apphttps://demo-pelvis.netlify.app/QuemSomos"
-        element={<QuemSomos />}
-      />
-      <Route
-        path="https://demo-pelvis.netlify.app/Tratamento"
-        element={<Tratamento />}
-      />
-      <Route
-        path="https://demo-pelvis.netlify.app/ComoFunciona"
-        element={<ComoFunciona />}
-      />
+      <Route path="/QuemSomos" element={<QuemSomos />} />
+      <Route path="/Tratamento" element={<Tratamento />} />
+      <Route path="/ComoFunciona" element={<ComoFunciona />} />
+      <Route path="*" element={<Home />} />
     </Routes>
   );
 };
