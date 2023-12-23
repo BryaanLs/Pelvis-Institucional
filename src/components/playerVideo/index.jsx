@@ -4,7 +4,7 @@ import "./styles.css";
 import videoSource from "../../assets/video/videoPelvie.mp4";
 
 const PlayerVideo = () => {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
 
@@ -51,7 +51,7 @@ const PlayerVideo = () => {
 
   return (
     <div className="custom-video-player">
-      <video id="myVideo" ref={videoRef}>
+      <video id="myVideo" ref={videoRef} autoPlay={true} playsInline>
         <source src={videoSource} type="video/mp4" />
         Seu navegador não suporta o elemento de vídeo.
       </video>

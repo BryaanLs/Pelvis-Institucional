@@ -11,7 +11,7 @@ import BoxAnimation from "../../components/boxAnimation";
 import { NavLink } from "react-router-dom";
 import React from "react";
 import Loader from "../../components/loader";
-import CardHome from "../../components/cardHome";
+import CardHome from "../../components/card";
 import peopleIcon from "../../assets/img/svgs/peopleIcon.svg";
 import GoogleCard from "../../components/googleCard";
 import CtaCard from "../../components/ctaCard";
