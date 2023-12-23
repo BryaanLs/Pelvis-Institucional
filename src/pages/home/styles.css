@@ -7,7 +7,7 @@
   border-radius: 1rem;
   padding: 0rem 2rem 5rem;
   position: relative;
-  margin-bottom: 10rem;
+  margin-bottom: 10rem !important;
 }
 .cardsHome {
   display: flex;
@@ -304,7 +304,7 @@
   }
 
   .bgTitleCardsHome {
-    margin-bottom: 0;
+    margin-bottom: 0 !;
     padding-bottom: 0;
   }
 
