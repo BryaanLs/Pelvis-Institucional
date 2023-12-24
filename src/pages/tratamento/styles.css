@@ -1,185 +1,214 @@
-.steps {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 4rem 0;
+.bgHeroTratamento {
+  background-image: url(../../assets/img/bgHeroTratamento.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
 }
 
-.stepsHeader {
-  margin: 3.5rem auto 0;
+.stepsAtendimento {
+  border: 2px solid var(--cinza5);
+  border-radius: 2rem;
+  padding: 4rem 1rem;
+  margin-top: 3rem;
+}
+
+.stepsAtendimento span {
+  display: block;
+  font-family: var(--sourceSans);
+  color: var(--roxo4);
+  font-size: 1.8rem;
+}
+
+.stepsAtendimento span,
+.stepsAtendimento h2 {
   text-align: center;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 
-.stepsHeader span,
-.stepsHeader p {
+.stepsAtendimento h2 {
+  font-size: 3.2rem;
+  font-weight: 500;
   color: var(--cinza);
-}
-.stepsHeader p {
-  margin-top: 1rem;
-  font-size: 2.2rem;
-}
-
-.stepsCards {
   display: flex;
-  width: 90%;
-  gap: 4rem;
-  margin: 3rem auto;
+  justify-content: center;
 }
 
-.stepsCards .boxAnimation {
-  counter-increment: num;
+.stepsAtendimento h2 img {
+  margin-left: 2rem;
 }
 
-.stepsCards .cardBox {
-  padding: 3rem 2rem 3rem 7rem;
-  height: 350px;
+.stepsCardsBox {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  padding: 2rem;
+  counter-reset: steps;
+}
+
+.stepsCard {
+  padding: 4rem 2rem 2rem;
+  border: 2px solid var(--roxo4);
+  border-radius: 2rem;
+  counter-increment: steps;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
+  height: 500px;
+  width: 480px;
+  box-shadow: 8px 6px 20.5px rgba(0, 0, 0, 0.15);
+}
+
+.stepsCard span:nth-child(2),
+.stepsCard p,
+.stepsCard a {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.stepsCard h3 {
+  background: linear-gradient(90deg, #9c59ff 6.88%, #bc8af2 81.16%);
+  border-radius: 1rem;
+  color: var(--branco);
+  font-size: 1.9rem;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding: 1rem 1rem;
+  margin: 0 auto;
+  width: 80%;
   position: relative;
 }
 
-.stepsCards .cardBox h3::after {
-  content: counter(num);
-  font-size: 6rem;
-  font-family: var(--poppins);
-  font-weight: bolder;
-  color: var(--verde1);
-  position: absolute;
-  left: 20px;
-  top: 5px;
+.stepsCard h3 img {
+  margin-left: 2rem;
 }
 
-.stepsCards .cardBox::before {
-  content: "";
-  width: 10px;
-  height: 50%;
-  background-color: var(--verde1);
-  position: absolute;
-  left: 30px;
-  top: 30%;
-  border-radius: 0.3rem;
+.stepsCard span:nth-child(2) {
+  font-size: 2.2rem;
+  display: block;
+  margin: 2rem auto;
+  text-align: left;
+  margin-right: auto;
 }
 
-.stepsCards .cardBox h3 {
-  color: var(--cinza2);
-  font-size: 2.5rem;
+.stepsCard p {
+  font-size: 1.8rem;
+  text-align: justify;
+  hyphens: auto;
+  margin-bottom: 2rem;
 }
 
-.stepsCards .cardBox p {
-  color: var(--cinza);
-  font-size: 1.5rem;
-}
-
-.stepsCards .cardBox a {
-  background-color: var(--roxo1);
-  width: 80%;
-  text-align: center;
+.stepsCard a {
+  margin: 0 auto;
   padding: 1rem 2rem;
-  color: var(--branco);
-  border-radius: 1rem;
-  margin-left: auto;
-}
-
-.stepsFooter {
+  border-radius: 5rem;
+  text-align: center;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  font-family: var(--taviraj);
+  justify-content: center;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
-.stepsFooter p {
-  margin: 3rem 0;
-  max-width: 50%;
-  text-align: center;
+.stepsCard a img {
+  margin-left: 2rem;
 }
 
-@media (max-width: 1140px) {
-  .stepsCards {
+.linkAvaliação {
+  background-color: var(--roxo6);
+  color: var(--branco);
+}
+
+.linkTratamentos {
+  color: var(--roxo6);
+  border: 3px solid var(--roxo6);
+}
+
+.linkAvaliação,
+.linkTratamentos {
+  transition: 0.2s ease-in-out;
+}
+
+.linkAvaliação:hover,
+.linkTratamentos:hover {
+  transform: scale(105%);
+  filter: brightness(115%);
+}
+
+.complement {
+  width: 90px;
+  height: 90px;
+  background-color: var(--roxo4);
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -40px;
+  top: -15px;
+}
+
+.complement span {
+  font-family: var(--taviraj);
+  color: var(--cinza);
+  background-color: var(--branco);
+  font-size: 3rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1100px) {
+  .stepsCardsBox {
     flex-direction: column;
+  }
+
+  .stepsCard {
+    width: 100%;
+  }
+
+  .stepsCard h3 {
+    text-align: center;
+    justify-content: center;
   }
 }
 
 @media (max-width: 700px) {
-  .steps {
-    width: 100%;
-    border: none;
-    box-shadow: none;
+  .complement {
+    width: 70px;
+    height: 70px;
+    top: -80px;
+    left: -80px;
   }
 
-  .stepsHeader span {
+  .complement span {
+    width: 50px;
+    height: 50px;
+  }
+
+  .stepsCard {
+    padding: 5rem 1rem;
+  }
+
+  .stepsCard h3 {
+    padding: 0.5rem 1;
+    font-size: 1.5rem;
+  }
+
+  .stepsCard a {
     font-size: 1.3rem;
   }
 
-  .stepsHeader h2,
-  .stepsFooter h2 {
-    font-size: 2.5rem;
+  .stepsCardsBox {
+    gap: 5rem;
   }
 
-  .stepsHeader p {
-    font-size: 1.4rem;
-  }
-
-  .stepsCards .cardBox h3 {
-    font-size: 2rem;
-  }
-
-  .stepsCards .cardBox::before {
-    left: -15px;
-  }
-
-  .stepsCards .cardBox h3::after {
-    left: -25px;
-  }
-
-  .stepsCards .cardBox a {
-    width: 100%;
-    font-size: 1.3rem;
-    padding: 1rem 0.2rem;
-  }
-
-  .stepsCards .cardBox {
-    height: 450px;
-    justify-content: space-around;
-  }
-
-  .stepsCards .cardBox {
-    padding: 0 0 0 2rem;
-    box-shadow: none;
-    border: none;
-    border-radius: 0;
-    position: relative;
-  }
-
-  .stepsCards .cardBox a::after {
-    content: "";
-    width: 100%;
-    height: 1px;
-    background-color: var(--cinza);
-    position: absolute;
-    top: 105%;
-    left: 0;
-  }
-
-  .stepsFooter {
-    margin-top: 5rem;
-  }
-
-  .stepsFooter p {
-    max-width: 90%;
-
-    font-size: 1.4rem;
-  }
-}
-
-@media (max-width: 500px) {
-  .stepsHeader h2,
-  .stepsFooter h2 {
-    font-size: 2rem;
+  .stepsAtendimento h2 {
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
   }
 }

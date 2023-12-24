@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
 import Container from "../../components/container";
-const PlayerVideo = React.lazy(() => import("../../components/playerVideo"));
 import Loader from "../../components/loader";
 import Card from "../../components/card";
 import peopleIcon from "../../assets/img/svgs/peopleIcon.svg";
@@ -9,6 +8,7 @@ import BoxAnimation from "../../components/boxAnimation";
 import Curriculum from "../../components/curriculum";
 import michelle from "../../assets/img/webp/michelle.webp";
 import CtaCard from "../../components/ctaCard";
+const PlayerVideo = React.lazy(() => import("../../components/playerVideo"));
 const QuemSomos = () => {
   return (
     <>

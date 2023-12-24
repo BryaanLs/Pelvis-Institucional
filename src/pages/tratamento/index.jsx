@@ -1,78 +1,70 @@
-// import React from "react";
 import Container from "../../components/container";
-// import Slider from "../../components/slider";
-// import Hero from "../../components/hero";
-// import bgHero from "../../assets/img/bgHeroTratamento.png";
-import BoxAnimation from "../../components/boxAnimation";
+// import BoxAnimation from "../../components/boxAnimation";
 import "./styles.css";
+import prancheta from "../../assets/img/svgs/prancheta.svg";
+import pelvieBranca from "../../assets/img/svgs/logoPelvieBranca.svg";
+import whats from "../../assets/img/svgs/whatsappBranco.svg";
+import checklist from "../../assets/img/svgs/checklistIcon.svg";
+import { NavLink } from "react-router-dom";
 
 const Tratamento = () => {
   return (
     <>
-      <div style={{ height: "20rem" }}></div>
-      <Container>
-        <div className="steps cardBox">
-          <BoxAnimation animation="top">
-            <div className="stepsHeader">
-              <span>Agendamento</span>
-              <h2 className="titleCubeL">As etapas do atendimento</h2>
-              <p>
-                Acolhimento, empatia e segurança:
-                <br /> aqui os pacientes se
-                <b> sentem em casa.</b>
-              </p>
-            </div>
-          </BoxAnimation>
-          <div className="stepsCards">
-            <BoxAnimation animation="left">
-              <div className="cardBox">
-                <h3>Agende uma avaliação</h3>
-                <p>
-                  O primeiro passo é <b>agendar sua avaliação</b> para que seu
-                  tratamento seja determinado da maneira <b>mais efetiva</b>
-                  possível!
-                </p>
-                <p>
-                  O agendamento deverá ser feito através do WhatsApp ou ligação!
-                </p>
-                <a href="#" target="_blank">
-                  Como funciona a avaliação?
-                </a>
-              </div>
-            </BoxAnimation>
-            <BoxAnimation animation="right">
-              <div className="cardBox">
-                <h3>Início das sessões</h3>
-                <p>
-                  Após <b>passar pela avaliação</b>, você iniciará suas sessões,
-                  cuja frequência será determinada <b>em conjunto</b> com a
-                  fisioterapeuta.
-                </p>
-                <p>
-                  A frequência pode ser semanal, duas vezes por semana ou até
-                  mesmo com intervalos maiores, a depender de cada caso.
-                </p>
-                <a href="#" target="_blank">
-                  Conheça a nossa equipe!
-                </a>
-              </div>
-            </BoxAnimation>
-          </div>
-          <BoxAnimation>
-            <div className="stepsFooter">
-              <h2 className="titleCubeL">Atendimento personalizado</h2>
-              <p>
-                Dispomos de uma secretária que te auxiliará em todos as etapas,
-                desde o <b>agendamento</b> e <b>confirmação das sessões,</b> até
-                as formas de pagamento e <b>obtenção do reembolso</b> junto ao
-                plano de saúde.
-              </p>
+      <Container sectionClass="bgHeroTratamento" />
+      <Container mainClass="stepsAtendimento">
+        <span>Agendamento</span>
+        <h2>
+          As etapas do atendimento
+          <img
+            src={prancheta}
+            alt="icone de uma prancheta com uma pessoa"
+            width="30"
+          />
+        </h2>
 
-              <a href="#" className="cta">
-                Reserve seu horário
-              </a>
-            </div>
-          </BoxAnimation>
+        <div className="stepsCardsBox">
+          <div className="stepsCard">
+            <h3>
+              <div className="complement">
+                <span>1</span>
+              </div>
+              Agende sua avaliação
+              <img src={pelvieBranca} alt="logo da pelvie branca" width="40" />
+            </h3>
+            <span>Fácil e rápido</span>
+            <p>
+              O primeiro passo é agendar sua avaliação para que seu tratamento
+              seja determinado da maneira mais efetiva possível.
+            </p>
+            <p>O agendamento é feito via WhatsApp ou ligação!</p>
+            <a href="#" className="linkAvaliação">
+              Agendar avaliação
+              <img src={whats} alt="logo do whatsapp" width="20" />
+            </a>
+          </div>
+
+          <div className="stepsCard">
+            <h3>
+              <div className="complement">
+                <span>2</span>
+              </div>
+              Início das sessões
+              <img src={pelvieBranca} alt="logo da pelvie branca" width="40" />
+            </h3>
+            <span>Totalmente personalizado!</span>
+            <p>
+              Após passar pela avaliação, você iniciará suas sessões, cuja
+              frequência será determinada em conjunto com a fisioterapia.
+            </p>
+            <p>
+              A frequência pode ser semanal, duas vezes por semana ou até mesmo
+              com intervalos maiores, a depender de cada caso
+            </p>
+            <NavLink to="ComoFunciona" className="linkTratamentos">
+              Agendar avaliação
+              <img src={checklist} alt="logo do whatsapp" width="20" />
+            </NavLink>
+          </div>
         </div>
       </Container>
     </>
