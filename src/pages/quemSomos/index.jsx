@@ -6,6 +6,9 @@ import Loader from "../../components/loader";
 import Card from "../../components/card";
 import peopleIcon from "../../assets/img/svgs/peopleIcon.svg";
 import BoxAnimation from "../../components/boxAnimation";
+import Curriculum from "../../components/curriculum";
+import michelle from "../../assets/img/webp/michelle.webp";
+import CtaCard from "../../components/ctaCard";
 const QuemSomos = () => {
   return (
     <>
@@ -95,7 +98,91 @@ const QuemSomos = () => {
         <h2>Conheça as profissionais da nossa clínica</h2>
       </Container>
 
-      <Container></Container>
+      <Container sectionClass="bgCurriculumNoPic">
+        <Curriculum
+          a="Veja os tratamentos"
+          aUrl="#"
+          altImg="Foto da Dra.Tal"
+          h2="Dra. Juliana"
+          img={michelle}
+        >
+          <p>
+            Ajudar a <b>restaurar a função normal</b> e fortalecer os músculos
+            do assoalho pélvico. Eles <b>desempenham um papel fundamental</b> no
+            suporte dos órgãos pélvicos, controle da micção, da defecação e na
+            função sexual. Ajudar a <b>restaurar a função normal</b> e
+            fortalecer os músculos do assoalho pélvico. Eles{" "}
+            <b>desempenham um papel fundamental</b> no suporte dos órgãos
+            pélvicos, controle da micção, da defecação e na função sexual.
+            Ajudar a <b>restaurar a função normal</b> e fortalecer os músculos
+            do assoalho pélvico. Eles <b>desempenham um papel fundamental</b> no
+            suporte dos órgãos pélvicos, controle da micção, da defecação e na
+            função sexual. Ajudar a <b>restaurar a função normal</b> e
+            fortalecer os músculos do assoalho pélvico. Eles{" "}
+            <b>desempenham um papel fundamental</b> no suporte dos órgãos
+            pélvicos, controle da micção, da defecação e na função sexual.
+          </p>
+        </Curriculum>
+      </Container>
+
+      <Container sectionClass="bgCurriculum">
+        <Curriculum
+          a="Veja os tratamentos"
+          aUrl="#"
+          altImg="Foto da Dra.Tal"
+          h2="Dra. Juliana"
+          img={michelle}
+          addClass="reverse"
+        >
+          <p>
+            Ajudar a <b>restaurar a função normal</b> e fortalecer os músculos
+            do assoalho pélvico. Eles <b>desempenham um papel fundamental</b> no
+            suporte dos órgãos pélvicos, controle da micção, da defecação e na
+            função sexual. Ajudar a <b>restaurar a função normal</b> e
+            fortalecer os músculos do assoalho pélvico. Eles{" "}
+            <b>desempenham um papel fundamental</b> no suporte dos órgãos
+            pélvicos, controle da micção, da defecação e na função sexual.
+            Ajudar a <b>restaurar a função normal</b> e fortalecer os músculos
+            do assoalho pélvico. Eles <b>desempenham um papel fundamental</b> no
+            suporte dos órgãos pélvicos, controle da micção, da defecação e na
+            função sexual. Ajudar a <b>restaurar a função normal</b> e
+            fortalecer os músculos do assoalho pélvico. Eles{" "}
+            <b>desempenham um papel fundamental</b> no suporte dos órgãos
+            pélvicos, controle da micção, da defecação e na função sexual.
+          </p>
+        </Curriculum>
+      </Container>
+
+      <Container sectionClass="bgCurriculumNoPic">
+        <Curriculum
+          a="Veja os tratamentos"
+          aUrl="#"
+          altImg="Foto da Dra.Tal"
+          h2="Dra. Juliana"
+          img={michelle}
+        >
+          <p>
+            Ajudar a <b>restaurar a função normal</b> e fortalecer os músculos
+            do assoalho pélvico. Eles <b>desempenham um papel fundamental</b> no
+            suporte dos órgãos pélvicos, controle da micção, da defecação e na
+            função sexual. Ajudar a <b>restaurar a função normal</b> e
+            fortalecer os músculos do assoalho pélvico. Eles{" "}
+            <b>desempenham um papel fundamental</b> no suporte dos órgãos
+            pélvicos, controle da micção, da defecação e na função sexual.
+            Ajudar a <b>restaurar a função normal</b> e fortalecer os músculos
+            do assoalho pélvico. Eles <b>desempenham um papel fundamental</b> no
+            suporte dos órgãos pélvicos, controle da micção, da defecação e na
+            função sexual. Ajudar a <b>restaurar a função normal</b> e
+            fortalecer os músculos do assoalho pélvico. Eles{" "}
+            <b>desempenham um papel fundamental</b> no suporte dos órgãos
+            pélvicos, controle da micção, da defecação e na função sexual.
+          </p>
+        </Curriculum>
+      </Container>
+
+      <Container sectionClass="bgCurriculum">
+        <CtaCard a="Reservar um horário" animation="right" />
+      </Container>
     </>
   );
 };

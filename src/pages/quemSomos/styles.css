@@ -101,7 +101,10 @@
 
 .professionalDescription {
   text-align: center;
-  margin: 4rem auto;
+  margin-top: 4rem;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 0 3px var(--roxo4);
 }
 
 .professionalDescription span {
@@ -118,6 +121,19 @@
   font-weight: 500;
 }
 
+.bgCurriculumNoPic,
+.bgCurriculum {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.bgCurriculum {
+  background-image: url(../../assets/img/bgCurriculum.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
 @media (max-width: 1600px) {
   .bgHeroQuemSomos {
     min-height: 100vh;
@@ -152,5 +168,10 @@
     text-align: justify;
     /* overflow-wrap: break-word; */
     hyphens: auto;
+  }
+
+  .professionalDescription h2 {
+    font-size: 2.2rem;
+    margin: 1rem 0;
   }
 }
