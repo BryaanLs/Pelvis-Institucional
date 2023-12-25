@@ -11,11 +11,8 @@
 }
 .cardsHome {
   display: flex;
-  /* padding: 10rem 0; */
-  /* flex-direction: column; */
   justify-content: space-evenly;
   padding-bottom: 5rem;
-  /* gap: 3rem; */
   position: absolute;
   bottom: -180px;
   left: 0;
@@ -74,10 +71,12 @@
 .especialidades {
   display: flex;
   transition: gap 0.2s ease-in-out;
-  justify-content: space-evenly;
-  gap: 10rem;
+  justify-content: space-between;
+  width: 100%;
+
   margin-top: 5rem;
 }
+
 .especialidadesMain {
   margin-top: 5rem;
   text-align: center;
@@ -100,7 +99,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* backdrop-filter: blur(2rem); */
   backdrop-filter: brightness(20%);
   min-height: max-content;
   display: flex;

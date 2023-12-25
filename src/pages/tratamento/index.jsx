@@ -8,6 +8,11 @@ import whats from "../../assets/img/svgs/whatsappBranco.svg";
 import checklist from "../../assets/img/svgs/checklistIcon.svg";
 import relogio from "../../assets/img/svgs/relogio.svg";
 import { NavLink } from "react-router-dom";
+import pranchetaComSeta from "../../assets/img/svgs/pranchetaComSeta.svg";
+import check from "../../assets/img/svgs/check.svg";
+import EspecialidadesCard from "../../components/EspecialidadesCard";
+import michelle from "../../assets/img/michelle.png";
+import heart from "../../assets/img/svgs/heartIcon.svg";
 
 const Tratamento = () => {
   return (
@@ -42,8 +47,9 @@ const Tratamento = () => {
               </h3>
               <span>Fácil e rápido</span>
               <p>
-                O primeiro passo é agendar sua avaliação para que seu tratamento
-                seja determinado da maneira mais efetiva possível.
+                O primeiro passo é <strong>agendar sua avaliação</strong> para
+                que seu tratamento seja determinado da maneira mais efetiva
+                possível.
               </p>
               <p>O agendamento é feito via WhatsApp ou ligação!</p>
               <a href="#" className="linkAvaliação">
@@ -108,7 +114,90 @@ const Tratamento = () => {
         </BoxAnimation>
       </Container>
 
-      <Container></Container>
+      <Container mainClass="reembolso">
+        <div className="reembolsoBox">
+          <div className="reembolsoTitle">
+            <h2>
+              <b>Reembolso do plano de saúde:</b> te ajudamos com esse benefício
+            </h2>
+            <img
+              src={pranchetaComSeta}
+              alt="icone de uma prancheta com seta"
+              width="30"
+            />
+          </div>
+          <div className="reembolsoContent">
+            <span>Fácil e rápido</span>
+            <p>
+              O primeiro passo é <strong>agendar sua avaliação</strong> para que
+              seu tratamento seja determinado da maneira mais efetiva possível.
+              O primeiro passo é <strong>agendar sua avaliação</strong> para que
+              seu tratamento seja determinado da maneira mais efetiva possível.
+              O primeiro passo é<strong>agendar sua avaliação</strong> para que
+              seu tratamento seja determinado da maneira mais efetiva possível.
+            </p>
+            <ul>
+              <li>
+                <img src={check} alt="icone de check" width="20" /> Alto
+                percentual de aprovação
+              </li>
+              <li>
+                <img src={check} alt="icone de check" width="20" /> Emissão de
+                guias
+              </li>
+              <li>
+                <img src={check} alt="icone de check" width="20" /> Documentação
+              </li>
+            </ul>
+          </div>
+        </div>
+      </Container>
+
+      <Container mainClass="especialidadesMain especialidadesMainTratamento">
+        <span className="spanLabel">Uma clínica acolhedora e agradável!</span>
+        <h3>
+          Saiba mais sobre nossos tratamentos
+          <img src={heart} alt="icone de coração" width="30" />
+        </h3>
+        <div className="especialidades">
+          <BoxAnimation animation="left">
+            <EspecialidadesCard
+              h3="Fisioterapia Pélvica"
+              aText="Saiba Mais"
+              img={michelle}
+              altImg={"Foto da Dra. Michelle"}
+              href={"#"}
+              p={
+                "Ajudar a restaurar a função normal e fortalecer os músculos do assoalho pélvico.  Eles desempenham um papel fundamental no suporte dos órgãos pélvicos, controle da micção, da defecação e na função sexual."
+              }
+            />
+          </BoxAnimation>
+          <BoxAnimation animation="top">
+            <EspecialidadesCard
+              h3="Acupuntura"
+              aText="Saiba Mais"
+              img={michelle}
+              altImg={"Foto da Dra. Michelle"}
+              href={"#"}
+              p={
+                "Ajudar a restaurar a função normal e fortalecer os músculos do assoalho pélvico.  Eles desempenham um papel fundamental no suporte dos órgãos pélvicos, controle da micção, da defecação e na função sexual."
+              }
+            />
+          </BoxAnimation>
+          <BoxAnimation animation="right">
+            <EspecialidadesCard
+              h3="Pilates"
+              aText="Saiba Mais"
+              img={michelle}
+              altImg={"Foto da Dra. Michelle"}
+              href={"#"}
+              p={
+                "Ajudar a restaurar a função normal e fortalecer os músculos do assoalho pélvico.  Eles desempenham um papel fundamental no suporte dos órgãos pélvicos, controle da micção, da defecação e na função sexual."
+              }
+            />
+          </BoxAnimation>
+        </div>
+      </Container>
     </>
   );
 };

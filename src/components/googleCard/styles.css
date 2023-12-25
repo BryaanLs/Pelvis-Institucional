@@ -33,7 +33,9 @@
 
 .googleCard p {
   text-align: justify;
-  word-wrap: break-word;
+  hyphens: auto;
+  line-height: 1.2;
+  margin: 1.3rem 0;
 }
 
 .googleCard:hover {

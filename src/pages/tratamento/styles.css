@@ -36,7 +36,6 @@
   justify-content: space-between;
   gap: 2rem;
   width: 90%;
-  /* padding-bottom: 2rem; */
   margin: 4rem auto;
 }
 .stepsCard {
@@ -220,6 +219,77 @@
   z-index: -1;
   border-radius: 10rem;
 }
+
+.reembolso {
+  border: 2px solid var(--roxo4);
+  padding: 3rem;
+
+  border-radius: 1rem;
+  margin-top: 2rem;
+  box-shadow: 8px 6px 20.5px rgba(0, 0, 0, 0.15);
+}
+
+.reembolsoBox::after {
+  content: url(../../assets/img/svgs/logoPelvieAccordion.svg);
+  position: absolute;
+  top: -110px;
+  left: 41%;
+  transform: scale(70%);
+}
+
+.reembolsoBox {
+  padding: 2rem 4rem;
+  border: 2px solid var(--cinza5);
+  border-radius: 1rem;
+  position: relative;
+}
+
+.reembolsoTitle {
+  display: flex;
+  justify-content: center;
+}
+.reembolsoTitle h2 {
+  margin: 1rem 0;
+  font-size: 2.2rem;
+  font-weight: 500;
+  color: var(--roxo4);
+}
+
+.reembolsoTitle img {
+  margin-left: 2rem;
+}
+
+.reembolsoContent span {
+  color: var(--roxo4);
+  margin: 2rem 0;
+  font-family: var(--sourceSans);
+  font-size: 1.7rem;
+  display: block;
+}
+
+.reembolsoContent p {
+  margin-bottom: 2rem;
+  text-align: justify;
+  hyphens: auto;
+}
+
+.reembolsoContent ul {
+  display: flex;
+  gap: 4rem;
+  justify-content: left;
+}
+
+.reembolsoContent ul li img {
+  margin-right: 1rem;
+}
+
+.especialidadesMainTratamento h3 {
+  color: var(--cinza);
+}
+.especialidadesMainTratamento img:nth-child(1) {
+  margin-left: 1rem;
+}
+
 @media (max-width: 1100px) {
   .stepsCardsBox {
     flex-direction: column;
@@ -236,10 +306,44 @@
 }
 @media (max-width: 900px) {
   .complementoRelogio {
-    top: -11px;
+    top: -80px;
+    left: -50px;
+    transform: scale(70%);
   }
   .diferencial h3 {
     font-size: 1.7rem;
+  }
+  .reembolsoTitle {
+    flex-direction: column-reverse;
+  }
+  .reembolsoTitle img {
+    rotate: -90deg;
+    margin: 0 auto 1rem;
+  }
+  .reembolsoTitle h2 {
+    font-size: 1.7rem;
+    padding: 1rem;
+    border-top: 2px solid var(--roxo4);
+    border-bottom: 2px solid var(--roxo4);
+  }
+  .reembolsoBox::after {
+    left: -90px;
+    top: -100px;
+    transform: scale(40%);
+  }
+  .reembolsoBox {
+    border: none;
+  }
+  .reembolsoContent {
+    padding-bottom: 3rem;
+  }
+  .reembolsoContent ul {
+    flex-direction: column;
+    gap: 0;
+  }
+  .reembolsoContent ul li {
+    border-bottom: 1px solid var(--roxo4);
+    padding: 2rem 0;
   }
 }
 @media (max-width: 700px) {
@@ -247,18 +351,6 @@
   .stepsCard p,
   .stepsCard a {
     width: 100%;
-  }
-
-  .complementoRelogio {
-    width: 60px;
-    height: 60px;
-    top: -5px;
-    left: -12px;
-  }
-
-  .complementoRelogio::after {
-    width: 45px;
-    height: 45px;
   }
 
   .diferencial h3 {
@@ -273,9 +365,7 @@
   .diferencial p {
     font-size: 1.7rem;
   }
-  .complementoRelogio img {
-    transform: scale(70%);
-  }
+
   .diferencial h3 img {
     top: 10px;
     right: 8px;
@@ -283,6 +373,7 @@
 
   .diferencial {
     border: none;
+    width: 100%;
   }
 
   .complement {
@@ -299,13 +390,12 @@
   }
 
   .stepsCardsBox {
-    border: none;
     gap: 5rem;
     padding: 0;
+    width: 100%;
   }
 
   .stepsCard {
-    border: none;
     justify-content: space-evenly;
   }
 
@@ -328,20 +418,29 @@
   .stepsAtendimento {
     border: none;
     padding: 0;
+    width: 100%;
   }
 
   .stepsAtendimento h2 {
     font-size: 2.3rem;
     margin-bottom: 2rem;
   }
+
+  .diferencial,
+  .stepsCard,
+  .reembolso {
+    box-shadow: none;
+    border: 1px solid var(--cinza5);
+    border-radius: 2rem;
+    box-shadow: 0 0 2px var(--roxo4);
+  }
 }
 @media (max-width: 600px) {
-  .complementoRelogio {
-    display: none;
-  }
-
   .diferencial {
     width: 100%;
+  }
+  .complementoRelogio {
+    top: -90px;
   }
 
   .diferencial h4,

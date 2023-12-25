@@ -27,9 +27,9 @@ const BoxAnimation = ({ animation, addClass, children }) => {
   }, []); // O array vazio como segundo argumento garante que o useEffect só é executado uma vez
 
   return (
-    <div className={`boxAnimation ${addClass}`} data-anime={animation}>
+    <span className={`boxAnimation ${addClass}`} data-anime={animation}>
       {children}
-    </div>
+    </span>
   );
 };
 
