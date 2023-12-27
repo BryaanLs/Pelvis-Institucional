@@ -1,20 +1,35 @@
 /* eslint-disable react/prop-types */
 import BoxAnimation from "../boxAnimation";
+import logoPelvieCta from "../../assets/img/svgs/logoPelvieCtaCard.svg";
+import whats from "../../assets/img/svgs/whatsappBranco.svg";
+import google from "../../assets/img/svgs/googleLogo.svg";
 import "./styles.css";
-const CtaCard = ({ a, animation }) => {
+const CtaCard = ({ animationBtnUm, animationBtnDois, p }) => {
   return (
     <div className="ctaCard">
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero
-        sapiente adipisci facere. Totam quos voluptates nisi a adipisci vitae.
-        Totam dignissimos commodi consequuntur distinctio. Natus eum aliquid
-        quia assumenda quos?
-      </p>
-      <BoxAnimation animation={animation}>
-        <a href="#" className="ctaBtn2">
-          {a}
-        </a>
-      </BoxAnimation>
+      <img src={logoPelvieCta} alt="logo da pelvie" width="140" height="141" />
+      <p>{p}</p>
+      <div className="ctaButtonsBox">
+        <p>
+          <b>5 </b>estrelas no <strong>Google!</strong>
+          <br />
+          Quem escolheu a Pelvie, gostou muito
+        </p>
+        <div className="ctaButtons">
+          <BoxAnimation animation={animationBtnUm}>
+            <a href="#" className="ctaBtnUm">
+              Ver Avaliações
+              <img src={google} alt="logo do google" width="20" height="20" />
+            </a>
+          </BoxAnimation>
+          <BoxAnimation animation={animationBtnDois}>
+            <a href="#" className="ctaBtnDois">
+              Reservar um horário
+              <img src={whats} alt="logo do whatsapp" width="20" height="20" />
+            </a>
+          </BoxAnimation>
+        </div>
+      </div>
     </div>
   );
 };

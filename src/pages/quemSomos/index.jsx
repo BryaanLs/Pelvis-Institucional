@@ -180,8 +180,8 @@ const QuemSomos = () => {
         </Curriculum>
       </Container>
 
-      <Container sectionClass="bgCurriculum">
-        <CtaCard a="Reservar um horário" animation="right" />
+      <Container>
+        <CtaCard p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam recusandae quaerat sit odit aliquam repellendus eius amet, modi quae itaque, vel dolores. Cumque totam, dolor ad officiis illo esse vero!" />
       </Container>
     </>
   );

@@ -1,55 +1,142 @@
 .ctaCard {
-  margin: 4rem 0;
+  padding: 3rem 2rem;
   display: flex;
-  grid-template-columns: 70% 20%;
-  padding: 6rem 2rem;
-  margin-top: 9rem;
-  border: 2px solid var(--roxo4);
-  border-radius: 1rem;
-  justify-content: space-between;
-  overflow: hidden;
-}
-
-.ctaCard > div {
   align-items: center;
-  display: flex;
+  gap: 4rem;
+  border-radius: 20px;
+  border: 3px solid #e8e8e8;
+  margin: 20rem 0;
+  width: 100%;
+  box-shadow: 10px 8px 20px 0px rgba(0, 0, 0, 0.15);
 }
 
-.ctaCard p {
+.ctaCard > p {
+  font-family: var(--taviraj);
   color: var(--roxo4);
-  font-size: 1.8rem;
   text-align: justify;
-  width: 70%;
+  hyphens: auto;
 }
-.ctaCard a {
+
+.ctaButtons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: max-content;
-  margin: auto;
-  height: max-content;
-  padding: 1rem 4rem;
+  gap: 1rem;
+}
+
+.ctaButtonsBox p {
+  text-align: center;
+  font-family: var(--taviraj);
+  color: var(--roxo4);
+  font-size: 1.3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.ctaButtons a {
+  display: block;
+  width: max-content;
+  padding: 1rem 3rem;
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  width: 240px;
+  transition: 0.2s ease-in-out;
+}
+
+.ctaButtons a img {
+  margin-left: 1rem;
+}
+
+.ctaBtnUm {
+  border: 2px solid var(--roxo4);
+  width: 100%;
+  color: var(--roxo4);
+}
+
+.ctaBtnDois {
+  background-color: var(--roxo4);
+  border: 2px solid var(--roxo4);
+  color: var(--branco);
+}
+
+.ctaBtnUm:hover {
+  background-color: var(--roxo4);
+  color: var(--branco);
+  transform: scale(105%);
+}
+
+.ctaBtnUm:hover img {
+  filter: contrast(0) brightness(1000%);
+}
+
+.ctaBtnDois:hover {
+  transform: scale(105%);
+  background-color: var(--roxo3);
+  border: 2px solid var(--roxo5);
 }
 
 @media (max-width: 1000px) {
   .ctaCard {
     flex-direction: column;
+    padding: 5rem 2rem;
+    gap: 6rem;
+  }
+
+  .ctaCard > p {
+    /* width: 500px; */
+    border-top: 2px solid var(--cinza3);
+    border-bottom: 2px solid var(--cinza3);
+    padding: 4rem 0;
+  }
+
+  .ctaButtons p {
+    margin-bottom: 2rem;
+  }
+
+  .ctaButtonsBox {
+    width: 100%;
+  }
+
+  .ctaButtonsBox .boxAnimation {
+    width: 100%;
+  }
+
+  .ctaButtons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .ctaButtons a {
+    width: 80%;
+    margin: 2rem auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .ctaButtons {
+    flex-direction: column;
+    padding: 1rem 0;
     gap: 2rem;
-    justify-content: left;
-    align-items: start;
-    padding: 4rem 4rem;
   }
-
-  .ctaCard > div {
+  .ctaButtons a {
     width: 100%;
-  }
-
-  .ctaCard a {
     margin: 0;
-    margin-top: 2rem;
-    width: 100%;
-    text-align: center;
-    font-size: 1.8rem;
   }
-
-  .ctaCard p {
+}
+@media (max-width: 375px) {
+  .ctaCard {
     width: 100%;
+    padding: 4rem 0;
+    border: none;
+    box-shadow: none;
+    border-bottom: 1px solid var(--roxo4);
+    border-top: 1px solid var(--roxo4);
+    border-radius: 0;
   }
 }

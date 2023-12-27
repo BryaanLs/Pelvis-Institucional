@@ -266,7 +266,11 @@ const Home = () => {
           </div>
         </div>
 
-        <CtaCard a="Reservar um horário" animation="right" />
+        <CtaCard
+          animationBtnUm="right"
+          animationBtnDois="left"
+          p="Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, Lorem ipsum dolor, "
+        />
       </Container>
     </>
   );

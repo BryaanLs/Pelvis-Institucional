@@ -1,0 +1,7 @@
+.bgHeroComoFunciona {
+  background-image: url(../../assets/img/bgHeroTratamento.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 60vh;
+}

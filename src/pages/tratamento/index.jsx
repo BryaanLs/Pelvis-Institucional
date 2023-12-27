@@ -13,7 +13,7 @@ import check from "../../assets/img/svgs/check.svg";
 import EspecialidadesCard from "../../components/EspecialidadesCard";
 import michelle from "../../assets/img/michelle.png";
 import heart from "../../assets/img/svgs/heartIcon.svg";
-
+import CtaCard from "../../components/ctaCard";
 const Tratamento = () => {
   return (
     <>
@@ -197,6 +197,10 @@ const Tratamento = () => {
             />
           </BoxAnimation>
         </div>
+      </Container>
+
+      <Container>
+        <CtaCard p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam recusandae quaerat sit odit aliquam repellendus eius amet, modi quae itaque, vel dolores. Cumque totam, dolor ad officiis illo esse vero!" />
       </Container>
     </>
   );

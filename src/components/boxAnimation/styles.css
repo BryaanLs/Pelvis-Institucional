@@ -32,7 +32,7 @@
   transform: translate3d(0, 0, 0);
 }
 
-.boxAnimation {
+/* .boxAnimation {
   color: unset;
   display: unset;
   width: unset;
@@ -50,4 +50,8 @@
   overflow: unset;
   position: unset;
   padding: unset;
+} */
+
+.boxAnimation {
+  display: block;
 }

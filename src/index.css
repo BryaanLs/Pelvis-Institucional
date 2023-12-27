@@ -5,6 +5,7 @@
   --padBtn: 2rem 3rem;
   --verde1: #9ed69a;
   --verde2: #b1ef80;
+  --verde3: #56a88a;
   --roxo1: #9668a8;
   --roxo2: #874e9d;
   --roxo3: #9b59ffab;
@@ -214,6 +215,9 @@ button:hover {
   }
   .spanLabel {
     font-size: 1.3rem;
+  }
+  .container {
+    padding: 2rem;
   }
 }
 @media (max-width: 600px) {

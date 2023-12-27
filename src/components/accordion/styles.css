@@ -1,35 +1,40 @@
-.accordion {
+.accordion,
+.accordionVerde {
   border-radius: 20px;
-  border: 3px solid #e2e2e2;
+  border: 1px solid var(--roxo4);
   background: #fff;
   box-shadow: 5px 10px 50px 0px rgba(69, 69, 69, 0.15);
   margin-top: 2rem;
   max-height: 100px;
   overflow-y: hidden;
+  border-radius: 20px;
+  background: linear-gradient(90deg, #9c59ff 6.88%, #7d56a8 81.16%);
+  position: relative;
+  margin: 8rem 0;
 }
-
+.bolinha {
+  position: relative;
+}
+.bolinha::before,
+.verde::before {
+  content: url(../../assets/img/svgs/pelvieFundoRoxoAccordion.svg);
+  position: absolute;
+  left: -80px;
+  top: -35px;
+  z-index: 3;
+  transform: scale(80%);
+}
+.verde::before {
+  content: url(../../assets/img/svgs/pelvieFundoVerdeAccordion.svg);
+}
+.accordionVerde {
+  border-radius: 20px;
+  background: linear-gradient(270deg, #bee596 0%, #56a88a 87%);
+  border-color: var(--verde3);
+}
 .open {
-  animation: opened 9s ease;
+  animation: opened 9s ease forwards;
 }
-
-@keyframes opened {
-  0% {
-    max-height: 100px;
-  }
-  100% {
-    max-height: 10000px;
-  }
-}
-
-@keyframes closed {
-  0% {
-    max-height: 10000px;
-  }
-  100% {
-    max-height: 100px;
-  }
-}
-
 .accordionHeader {
   display: flex;
   padding: 2rem;
@@ -38,23 +43,30 @@
   cursor: pointer;
 }
 .accordionHeader h2 {
+  padding-left: 4rem;
   font-size: 2.5rem;
-  color: var(--cinza);
+  color: var(--branco);
+  font-weight: normal;
+  font-family: var(--sourceSans);
 }
 .accordionHeader button {
   transition: rotate 0.2s linear;
   background-color: transparent;
   color: var(--cinza);
-  background-image: url(../../assets/img/svgs/arrow.png);
+  background-image: url(../../assets/img/svgs/arrow.svg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: contain;
+  rotate: 90deg;
 }
 .accordionText {
   padding: 2rem;
   position: relative;
   gap: 2rem;
   animation: openText 0.4s linear;
+  background-color: var(--branco);
+  z-index: 2;
+  transition: none;
 }
 .accordionText p {
   padding: 1rem 0;
@@ -68,6 +80,22 @@
   top: 0;
 }
 
+@keyframes opened {
+  0% {
+    max-height: 100px;
+  }
+  100% {
+    max-height: 10000px;
+  }
+}
+@keyframes closed {
+  0% {
+    max-height: 10000px;
+  }
+  100% {
+    max-height: 100px;
+  }
+}
 @keyframes openText {
   0% {
     opacity: 0;
