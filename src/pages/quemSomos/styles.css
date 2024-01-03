@@ -87,7 +87,6 @@
 }
 
 .ourValuesCards .card:hover {
-  /* rotate: 1deg; */
   box-shadow: 8px 6px 20.5px rgba(0, 0, 0, 0.15);
 
   transform: scale(105%);

@@ -36,7 +36,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           className="logoColoridaDesktop"
           src={logoBranca}
           alt="logo pelvie"
-          width="150"
+          width="110"
         />
         {openMenu && (
           <div className="navigationTextMenu">

@@ -43,7 +43,6 @@
   padding: 0.5rem 2rem;
   color: var(--branco);
   border-radius: 4rem;
-  border: 2px solid var(--branco);
   font-size: 2.4rem;
 }
 .titleCardsHomeCtas {
@@ -73,10 +72,8 @@
   transition: gap 0.2s ease-in-out;
   justify-content: space-between;
   width: 100%;
-
   margin-top: 5rem;
 }
-
 .especialidadesMain {
   margin-top: 5rem;
   text-align: center;
@@ -155,7 +152,6 @@
   font-weight: bold;
   margin: 0.5rem 0;
 }
-
 .bgGoogle {
   background-image: linear-gradient(
     115deg,
@@ -163,20 +159,17 @@
     rgba(69, 51, 97, 0.12) 99.01%
   );
 }
-
 .google {
   display: flex;
   flex-direction: column;
   text-align: center;
 }
-
 .google span {
   font-size: 2rem;
   margin-top: 2rem;
   line-height: 0.3;
   color: #979797;
 }
-
 .google h2 {
   font-size: 3.3rem;
   margin-bottom: 4rem;
@@ -191,17 +184,51 @@
   gap: 3rem;
   margin-bottom: 3rem;
 }
-
 .cardsGoogle .googleCard:nth-child(4),
 .cardsGoogle .googleCard:nth-child(5),
 .cardsGoogle .googleCard:nth-child(6) {
   margin-left: 2rem !important;
 }
-
 .google a {
   width: max-content;
   margin: 2rem auto;
   padding: 1rem 4rem;
+}
+.googleMaps {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.googleMaps span {
+  color: var(--cinza);
+  font-family: var(--taviraj);
+}
+.googleMaps > h3 {
+  font-weight: 400;
+  color: var(--roxo4);
+  line-height: 0.9;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.adressMaps {
+  display: flex;
+  width: 100%;
+  gap: 10rem;
+  margin-top: 6rem;
+}
+.adressText h3,
+.phoneMaps h3 {
+  color: var(--roxo6);
+}
+.adressText a,
+.phoneMaps a {
+  font-size: 2rem;
+  position: relative;
+  transition: color 0.1s ease-in-out;
+  text-decoration: underline;
+}
+.adressMaps a:hover {
+  color: var(--roxo4);
 }
 @media (max-width: 1600px) {
   .especCard img {
@@ -213,52 +240,7 @@
   .especCard p {
     width: 300px;
   }
-}
 
-.googleMaps {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.googleMaps span {
-  color: var(--cinza);
-  font-family: var(--taviraj);
-}
-
-.googleMaps > h3 {
-  font-weight: 400;
-  color: var(--roxo4);
-  line-height: 0.9;
-  margin-bottom: 4rem;
-  text-align: center;
-}
-
-.adressMaps {
-  display: flex;
-  width: 100%;
-  gap: 10rem;
-  margin-top: 6rem;
-}
-
-.adressText h3,
-.phoneMaps h3 {
-  color: var(--roxo6);
-}
-
-.adressText a,
-.phoneMaps a {
-  font-size: 2rem;
-  position: relative;
-  transition: color 0.1s ease-in-out;
-  text-decoration: underline;
-}
-
-.adressMaps a:hover {
-  color: var(--roxo4);
-}
-
-@media (max-width: 1600px) {
   .especialidades {
     gap: 2rem;
   }
@@ -287,10 +269,13 @@
     flex-direction: column;
   }
 }
-
 @media (max-width: 1100px) {
   .especialidades {
     flex-direction: column;
+  }
+
+  .bgTitleCardsHome {
+    margin-bottom: 0 !important;
   }
 
   .especialidadesMain > h3,
@@ -330,7 +315,6 @@
     width: 100%;
   }
 }
-
 @media (max-width: 950px) {
   .cardsGoogle {
     display: flex;
@@ -381,5 +365,13 @@
   .adressText a,
   .phoneMaps a {
     font-size: 1.7rem;
+  }
+
+  .cardsHomeHeader {
+    padding: 5rem 0;
+  }
+
+  .cardsHomeHeader h1 {
+    font-size: 2rem;
   }
 }

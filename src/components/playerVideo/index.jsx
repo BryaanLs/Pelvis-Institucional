@@ -51,7 +51,7 @@ const PlayerVideo = () => {
 
   return (
     <div className="custom-video-player">
-      <video id="myVideo" ref={videoRef} autoPlay playsInline>
+      <video id="myVideo" ref={videoRef} autoPlay={true} playsInline>
         <source src={videoSource} type="video/mp4" />
         Seu navegador não suporta o elemento de vídeo.
       </video>

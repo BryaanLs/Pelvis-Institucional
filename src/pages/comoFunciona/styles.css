@@ -59,6 +59,9 @@
   margin-left: 2rem;
 }
 
+.accVerde .accTitle > span {
+  color: var(--verde3);
+}
 .ctaAcc > a,
 .ctaAccVerde > a {
   padding: 1rem 3rem;
@@ -115,7 +118,6 @@
 
 .presentationTeam span {
   text-align: center;
-  /* background-color: blue; */
   font-family: var(--sourceSans);
   font-weight: 500;
   font-size: 1.9rem;
@@ -158,9 +160,22 @@
   .accTitle span {
     font-size: 1.6rem;
   }
+}
 
-  .accVerde {
-    border-top: 1px solid var(--cinza2);
-    border-radius: 0;
+@media (max-width: 570px) {
+  .ctaAcc > a,
+  .ctaAccVerde > a {
+    font-size: 1.4rem;
+  }
+
+  .presentationTeam h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .presentationTeam img {
+    transform: translateX(-20%);
   }
 }

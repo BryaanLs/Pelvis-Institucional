@@ -332,7 +332,7 @@ const ComoFunciona = () => {
 
         <div className="ctaAcc">
           <a href="#">
-            Agendar fisioterapia Pélvica{" "}
+            Agendar Pilates
             <img src={whatsappPurple} alt="Logo do whatsapp" />
           </a>
           <p>
