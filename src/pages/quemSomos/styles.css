@@ -97,6 +97,9 @@
   margin: 4rem 0;
   background: url(../../assets/img/bgTemporario.png);
   min-height: 80vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 }
 
 .professionalDescription {

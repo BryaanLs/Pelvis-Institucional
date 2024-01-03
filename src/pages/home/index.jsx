@@ -115,7 +115,7 @@ const Home = () => {
         </div>
       </Container>
 
-      <Container sectionClass="bgOurTeam" mainClass="ourTeam">
+      <Container sectionClass="bgOurTeam" mainClass="ourTeam" id="time">
         <span className="spanLabelLeaked">
           Uma clínica acolhedora e agradável!
         </span>

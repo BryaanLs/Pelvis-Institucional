@@ -166,7 +166,7 @@ const Tratamento = () => {
               aText="Saiba Mais"
               img={michelle}
               altImg={"Foto da Dra. Michelle"}
-              href={"#"}
+              href={"/#ourSpace"}
               p={
                 "Ajudar a restaurar a função normal e fortalecer os músculos do assoalho pélvico.  Eles desempenham um papel fundamental no suporte dos órgãos pélvicos, controle da micção, da defecação e na função sexual."
               }

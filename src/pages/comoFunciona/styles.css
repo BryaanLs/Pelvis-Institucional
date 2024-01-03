@@ -5,3 +5,162 @@
   background-size: cover;
   min-height: 60vh;
 }
+
+.acc {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.acc span.boxAnimation {
+  width: 80%;
+}
+
+.accRoxo,
+.accVerde {
+  border-radius: 1rem;
+  border: 3px solid var(--roxo4);
+}
+
+.accVerde {
+  border: 3px solid var(--verde3);
+}
+
+.accTitle {
+  text-align: center;
+  padding: 5rem 0 1rem 0;
+  color: var(--roxo4);
+}
+
+.accTitle span {
+  color: var(--roxo4);
+  font-family: var(--sourceSans);
+  font-size: 1.8rem;
+}
+
+.ctaAcc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  margin-top: 5rem;
+}
+
+.accVerde .accTitle h2 {
+  color: var(--verde3);
+}
+.accTitle h2 img {
+  margin-left: 2rem;
+}
+
+.accVerde .accTitle h2 img {
+  margin-left: 2rem;
+}
+
+.ctaAcc > a,
+.ctaAccVerde > a {
+  padding: 1rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  border-radius: 5rem;
+  text-transform: uppercase;
+  border: 2px solid var(--roxo6);
+  font-weight: bold;
+  color: var(--roxo6);
+  transition: 0.2s ease-in-out;
+  margin-bottom: 5px;
+}
+.ctaAccVerde > a {
+  border: 2px solid var(--verde3);
+  color: var(--verde3);
+}
+
+.ctaAcc > a:hover {
+  background-color: var(--roxo6);
+  transform: scale(105%);
+  color: var(--branco);
+  box-shadow: 0 0 5px var(--roxo4);
+}
+
+.ctaAccVerde > a:hover {
+  background-color: var(--verde3);
+  transform: scale(105%);
+  color: var(--branco);
+  box-shadow: 0 0 5px var(--verde2);
+}
+
+.ctaAcc > a:hover img {
+  filter: brightness(900%);
+}
+
+.ctaAcc p a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.sectionPresentationTeam {
+  display: flex;
+}
+
+.presentationTeam {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.presentationTeam span {
+  text-align: center;
+  /* background-color: blue; */
+  font-family: var(--sourceSans);
+  font-weight: 500;
+  font-size: 1.9rem;
+  width: 100%;
+  display: block;
+}
+
+.presentationTeam h2 {
+  font-size: 3rem;
+  color: var(--roxo4);
+}
+
+.presentationTeam h2 img {
+  margin-left: 2rem;
+}
+
+.presentationTeam a {
+  padding: 1rem 3rem;
+  background-color: var(--roxo4);
+}
+
+@media (max-width: 700px) {
+  .acc {
+    border: none;
+    padding: 0 1rem;
+  }
+  .acc span.boxAnimation {
+    width: 100%;
+  }
+
+  .accTitle span {
+    text-align: left;
+    line-height: 0;
+  }
+  .accTitle h2 {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  .accTitle span {
+    font-size: 1.6rem;
+  }
+
+  .accVerde {
+    border-top: 1px solid var(--cinza2);
+    border-radius: 0;
+  }
+}
