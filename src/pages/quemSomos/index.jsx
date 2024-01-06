@@ -14,7 +14,7 @@ import CtaCard from "../../components/ctaCard";
 import { lazy, Suspense } from "react";
 
 //Fotos
-import michelle from "../../assets/img/webp/MichelleCV.webp";
+import michelle from "../../assets/img/webp/michelleCV.webp";
 import juliana from "../../assets/img/webp/julianaCV.webp";
 import thais from "../../assets/img/webp/thaisCV.webp";
 import cibele from "../../assets/img/webp/CibeleCV.webp";
