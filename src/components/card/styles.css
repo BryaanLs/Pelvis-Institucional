@@ -11,10 +11,11 @@
   border-radius: 2rem;
   text-align: center;
   width: 320px;
+  height: 100%;
 }
 
 .card h3 {
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   color: var(--roxo4);
   padding-bottom: 2rem;
   position: relative;
@@ -22,12 +23,15 @@
 
 .card h3::after {
   content: "";
-  width: 80%;
-  height: 2px;
+  width: 90%;
+  height: 1px;
+  /* box-shadow: 0 0 3px var(--roxo4); */
+  border-radius: 5rem;
   background-color: var(--roxo4);
   position: absolute;
-  left: 10%;
+  left: 5%;
   bottom: 0;
+  opacity: 30%;
 }
 
 .card p {

@@ -36,7 +36,7 @@ const Menu = ({ openMenu, setOpenMenu }) => {
           className="logoColoridaDesktop"
           src={logoBranca}
           alt="logo pelvie"
-          width="110"
+          width="150"
         />
         {openMenu && (
           <div className="navigationTextMenu">
@@ -50,10 +50,10 @@ const Menu = ({ openMenu, setOpenMenu }) => {
             Página Inicial
           </NavLink>
           <NavLink to="QuemSomos" onClick={closeMenu}>
-            Quem somos
+            Quem Somos
           </NavLink>
           <NavLink to="Tratamento" onClick={closeMenu}>
-            Tratamento
+            Tratamentos
           </NavLink>
           <NavLink to="ComoFunciona" onClick={closeMenu}>
             Como Funciona

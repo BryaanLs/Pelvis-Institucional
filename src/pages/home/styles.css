@@ -1,5 +1,5 @@
 .bgTitleCardsHome {
-  background-image: url(../../assets/img/bgCardsHome.png);
+  background-image: url(../../assets/img/webp/bgCardsHome.webp);
   background-position: center center;
   backdrop-filter: blur(200px);
   background-repeat: no-repeat;
@@ -169,6 +169,8 @@
   margin-top: 2rem;
   line-height: 0.3;
   color: #979797;
+  margin: 0 auto;
+  padding: 1.2rem 3rem;
 }
 .google h2 {
   font-size: 3.3rem;
@@ -179,16 +181,20 @@
 .cardsGoogle {
   display: grid;
   grid-template-columns: repeat(3, 380px);
-  flex-shrink: 2;
+  flex-shrink: 0;
+  place-content: start;
+  place-items: center;
+  place-self: center;
   height: max-content;
   gap: 3rem;
   margin-bottom: 3rem;
 }
-.cardsGoogle .googleCard:nth-child(4),
-.cardsGoogle .googleCard:nth-child(5),
-.cardsGoogle .googleCard:nth-child(6) {
-  margin-left: 2rem !important;
+
+.cardsGoogle span {
+  padding: 0;
+  margin: 0;
 }
+
 .google a {
   width: max-content;
   margin: 2rem auto;
@@ -215,6 +221,7 @@
   width: 100%;
   gap: 10rem;
   margin-top: 6rem;
+  justify-content: space-around;
 }
 .adressText h3,
 .phoneMaps h3 {

@@ -17,7 +17,7 @@
 }
 
 .descriptionCard {
-  background-color: var(--roxo3);
+  background-color: var(--verde4);
   position: absolute;
   bottom: 0;
   left: 0;
@@ -37,6 +37,8 @@
   font-size: 2rem;
   position: relative;
   line-height: 1;
+  color: var(--branco);
+  font-family: var(--sourceSans);
 }
 
 .descriptionCard h3 span {
@@ -45,8 +47,8 @@
 
 .descriptionCard span:nth-child(1) {
   font-size: 2rem;
-  font-weight: 400;
-  color: var(--verde2);
+  font-weight: bold;
+  color: var(--branco);
 }
 
 .descriptionCard p,
@@ -60,23 +62,26 @@
 
 .descriptionCard::after {
   content: "";
-  width: 10px;
+  width: 4px;
   border-radius: 2rem;
   height: 75%;
   position: absolute;
   left: 15px;
   top: 21px;
-  background-color: var(--verde2);
+  background-color: var(--branco);
+  box-shadow: 0 0 3px var(--branco);
 }
 
 .specCard button {
   position: absolute;
-  bottom: 10px;
-  right: 0;
+  bottom: 5px;
+  right: -20px;
+  scale: 80%;
   background-color: transparent;
 }
 .specCard button:hover {
   background-color: transparent;
+  scale: 100%;
 }
 
 .CardMain {
@@ -88,26 +93,32 @@
   position: absolute;
   width: 100%;
   transition: opacity 2s;
+  counter-reset: dra;
 }
 
-.doctorName::after {
+/* .doctorName::after {
   content: "";
-  width: 25px;
-  height: 6px;
-  background-color: var(--roxo4);
+  width: 20px;
+  height: 20px;
+  background-color: var(--roxo2);
   position: absolute;
-  left: 5px;
-  top: 35%;
+  left: -10px;
+  top: 13px;
   border-radius: 2rem;
-}
+
+} */
 
 .doctorName h3 span,
 .doctorName h3 {
-  text-align: right;
+  text-align: center;
   font-size: 2rem;
   margin-right: 1rem;
-  color: var(--roxo4);
+  color: var(--branco);
+  border-radius: 1rem;
+  background-color: var(--verde3);
   font-family: var(--sourceSans);
+  width: 100%;
+  margin-top: 1rem;
 }
 
 .doctorName h3 span {

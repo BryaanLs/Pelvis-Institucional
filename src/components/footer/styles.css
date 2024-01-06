@@ -48,6 +48,15 @@ footer {
   margin: 0 4rem;
 }
 
+.contatoFooter a {
+  display: block;
+  text-decoration: underline;
+  transition: 0.1s ease-in-out;
+}
+
+.contatoFooter a:hover {
+  color: var(--roxo4);
+}
 .funcionamentoFooter {
   /* background-color: crimson; */
 }

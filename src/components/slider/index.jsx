@@ -37,13 +37,16 @@ const Slider = () => {
                   active === index ? s.slideActive : s.slideItem
                 }`}
               >
-                <img
-                  src={slide.full}
-                  alt="Slide"
-                  width="1200"
-                  height="455"
-                  loading="lazy"
-                />
+                <picture>
+                  <source media="(max-width: 800px)" srcSet={slide.mobile} />
+                  <img
+                    src={slide.full}
+                    alt="Slide"
+                    width="1200"
+                    height="455"
+                    loading="lazy"
+                  />
+                </picture>
               </div>
             ))}
           </div>

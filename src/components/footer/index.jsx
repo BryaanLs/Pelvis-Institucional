@@ -1,9 +1,10 @@
+/* eslint-disable react/jsx-no-target-blank */
 // import React from "react";
 
 import Logo from "../../assets/img/svgs/footerLogo.svg";
 import icoInsta from "../../assets/img/svgs/iconInstagram.svg";
 import icoWhats from "../../assets/img/svgs/iconWhatsapp.svg";
-import icoFace from "../../assets/img/svgs/iconFacebook.svg";
+
 import "./styles.css";
 import { NavLink } from "react-router-dom";
 
@@ -22,35 +23,47 @@ const Footer = () => {
               Página Inicial
             </NavLink>
             <NavLink to="/QuemSomos">Quem Somos</NavLink>
-            <NavLink to="/Tratamento">Tratamento</NavLink>
+            <NavLink to="/Tratamento">Tratamentos</NavLink>
             <NavLink to="/ComoFunciona">Como Funciona</NavLink>
           </nav>
         </div>
 
         <div className="contatoFooter">
           <h3>Contato</h3>
-          <p>clinica@gmail.com</p>
-          <p>(11)91311-2992</p>
-          <p>
+
+          <a href="mailto:clinica@gmail.com" target="_blank">
+            clinica@gmail.com
+          </a>
+          <a href="tel:+5511913112992" target="_blank">
+            (11) 91311-2992
+          </a>
+          <a
+            href="https://www.google.com/maps?ll=-23.613567,-46.69575&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=17403131375481056319"
+            target="_blank"
+          >
             Rua James Watt, 142, Sala 42, Brooklin, São Paulo - SP CEP 04576-050
-          </p>
+          </a>
         </div>
 
         <div className="funcionamentoFooter">
           <div className="horarioFooter">
             <h3>Horário de funcionamento</h3>
-            <p>Segunda a Sexta das 7h às 21h Sábados das 8h às 14h.</p>
+            <p>
+              Segunda a Sexta das 7h às 21h
+              <br />
+              Sábados das 8h às 14h.
+            </p>
           </div>
           <div className="iconesFooter">
             <nav>
-              <a href="#" target="_blank">
-                <img src={icoInsta} alt="" />
+              <a
+                href="https://www.instagram.com/pelviefisioterapia?igsh=cTg1d3NxejRnbTNs"
+                target="_blank"
+              >
+                <img src={icoInsta} alt="icone do instagram" />
               </a>
-              <a href="#" target="_blank">
-                <img src={icoWhats} alt="" />
-              </a>
-              <a href="#" target="_blank">
-                <img src={icoFace} alt="" />
+              <a href="https://wa.link/ibbufu" target="_blank">
+                <img src={icoWhats} alt="icone do whatsapp" />
               </a>
             </nav>
           </div>
