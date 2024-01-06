@@ -2,14 +2,21 @@
 // import React from 'react'
 import "./styles.css";
 import BoxAnimation from "../boxAnimation";
-const Curriculum = ({ h2, img, altImg, a, aUrl, addClass, children }) => {
+const Curriculum = ({ img, altImg, a, aUrl, addClass, children }) => {
   return (
     <div className="curriculum">
-      <h2>{h2}</h2>
       <div className={`pictureAndText ${addClass}`}>
         <BoxAnimation animation="left" addClass="animationPicture">
           <div className="picture">
-            <img src={img} alt={altImg} />
+            <a href={aUrl}>
+              <img
+                src={img}
+                alt={altImg}
+                width="365"
+                height="445"
+                loading="lazy"
+              />
+            </a>
           </div>
         </BoxAnimation>
         <div className="text">

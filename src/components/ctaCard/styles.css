@@ -14,7 +14,7 @@
 .ctaCard > p {
   font-family: var(--sourceSans);
   color: var(--roxo4);
-  text-align: justify;
+  text-align: center;
   hyphens: auto;
   font-size: 2.2rem;
   font-style: italic;
@@ -120,7 +120,6 @@
     margin: 2rem auto;
   }
 }
-
 @media (max-width: 720px) {
   .ctaButtons {
     flex-direction: column;

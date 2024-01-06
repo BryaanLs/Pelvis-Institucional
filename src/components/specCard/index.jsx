@@ -17,12 +17,14 @@ const SpecCard = ({ h3, p, img, span }) => {
           <img
             src={img}
             alt="foto da dra.michelle"
-            width={270}
+            width="270"
+            height="435"
             style={{
               border: openCard
                 ? "0px solid var(--branco)"
                 : "3px solid var(--branco)",
             }}
+            loading="lazy"
           />
           <div
             className="descriptionCard"
@@ -40,7 +42,13 @@ const SpecCard = ({ h3, p, img, span }) => {
             style={{ rotate: openCard ? "360deg" : "180deg" }}
             name="arrowCard"
           >
-            <img src={arrow} alt="seta para abrir o cartão" />
+            <img
+              src={arrow}
+              alt="seta para abrir o cartão"
+              width="22"
+              height="13"
+              loading="lazy"
+            />
           </button>
         </div>
         {!openCard && (

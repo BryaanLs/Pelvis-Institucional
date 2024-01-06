@@ -18,6 +18,16 @@
   left: 0;
   width: 100%;
 }
+
+.cardsHome .card {
+  height: 100%;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+.cardsHome .card p {
+  text-align: center;
+}
 .cardsHomeHeader {
   display: flex;
   justify-content: space-around;
@@ -189,12 +199,10 @@
   gap: 3rem;
   margin-bottom: 3rem;
 }
-
 .cardsGoogle span {
   padding: 0;
   margin: 0;
 }
-
 .google a {
   width: max-content;
   margin: 2rem auto;

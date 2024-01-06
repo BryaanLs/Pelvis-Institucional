@@ -1,15 +1,6 @@
 .curriculum {
-  padding: 5rem 0;
+  padding: 3rem 1rem;
   margin: 3rem 0;
-}
-
-.curriculum > h2 {
-  text-align: center;
-  margin: 0 auto 4rem;
-  font-weight: 500;
-  color: var(--roxo4);
-  padding-bottom: 2rem;
-  width: max-content;
 }
 
 .pictureAndText,
@@ -17,6 +8,32 @@
   display: flex;
   justify-content: space-between;
   gap: 8rem;
+  height: 100%;
+}
+.picture {
+  overflow: hidden;
+  border-radius: 10px;
+  transition: 0.5s;
+  height: 445px;
+}
+.picture img {
+  border-radius: 10px;
+}
+
+.picture a {
+  display: block;
+  transition: 0.5s;
+}
+
+.picture a:hover {
+  transform: scale(105%);
+  rotate: 2deg;
+  filter: brightness(110%);
+}
+
+.picture:hover {
+  box-shadow: -10px 10px 10px #cfb2fc;
+  transform: translateY(-20px);
 }
 
 .animationPicture,
@@ -30,6 +47,7 @@
   align-items: center;
   justify-content: space-between;
   width: 50%;
+  height: 100%;
 }
 
 .text p {
@@ -46,6 +64,7 @@
   border-radius: 4rem;
   color: var(--branco);
   font-weight: bold;
+  margin-top: 20rem;
 }
 
 .animationLink:hover,
@@ -84,7 +103,56 @@
   margin-right: auto;
 }
 
-@media (max-width: 1000px) {
+.descriptionCV {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.descriptionCV h2 {
+  color: var(--roxo4);
+  line-height: 1.6;
+}
+
+.descriptionCV span:nth-child(2) {
+  display: block;
+  font-family: var(--sourceSans);
+  font-weight: bold;
+  font-style: italic;
+  margin-bottom: 3rem;
+}
+
+.descriptionCV ul {
+  padding-left: 2rem;
+}
+.descriptionCV ul li {
+  list-style-type: disc;
+  margin: 1rem 0;
+}
+
+.descriptionCV span:nth-child(4) {
+  display: block;
+  font-family: var(--sourceSans);
+  margin-top: 1rem;
+  font-weight: bold;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: start;
+}
+
+.reverse .descriptionCV span:nth-child(4) {
+  margin-left: auto;
+  margin-top: auto;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: end;
+}
+
+@media (max-width: 1090px) {
+  .pictureAndText,
+  .animationPicture {
+    gap: 2rem;
+  }
   .pictureAndText,
   .reverse {
     flex-direction: column;
@@ -111,6 +179,18 @@
 
   .curriculum::after {
     display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .descriptionCV h2 {
+    font-size: 2.9rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  .descriptionCV span:nth-child(2) {
+    text-align: center;
   }
 }
 

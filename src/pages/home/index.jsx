@@ -1,24 +1,40 @@
 /* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable no-unused-vars */
-import Container from "../../components/container";
+
+// ** IMPORTS
+// Estilos
 import "./styles.css";
+
+// Components
 import HeroCarrossel from "../../components/HeroCarrossel";
 import EspecialidadesCard from "../../components/EspecialidadesCard";
+import Container from "../../components/container";
 import SpecCard from "../../components/specCard";
-import michelle from "../../assets/img/michelle.png";
-import michele from "../../assets/img/webp/michelle.png";
 import BoxAnimation from "../../components/boxAnimation";
-import { NavLink } from "react-router-dom";
-import React from "react";
 import Loader from "../../components/loader";
 import CardHome from "../../components/card";
+import GoogleCard from "../../components/googleCard";
+import CtaCard from "../../components/ctaCard";
+
+// Hooks
+import { NavLink } from "react-router-dom";
+import { lazy, Suspense } from "react";
+
+//Fotos
+import michelle from "../../assets/img/michelle.png";
+import michele from "../../assets/img/webp/michelle.webp";
+import juliana from "../../assets/img/webp/juliana.webp";
+import thais from "../../assets/img/webp/thais.webp";
+import cibele from "../../assets/img/webp/cibele.webp";
+
+//Icones
 import acolhimento from "../../assets/img/svgs/acolhimento.svg";
 import cuidado from "../../assets/img/svgs/cuidado.svg";
 import notaMaxima from "../../assets/img/svgs/notaMaxima.svg";
-import GoogleCard from "../../components/googleCard";
-import CtaCard from "../../components/ctaCard";
-const Maps = React.lazy(() => import("../../components/maps"));
-const Carrossel = React.lazy(() => import("../../components/slider"));
+
+// Lazy imports
+const Maps = lazy(() => import("../../components/maps"));
+const Carrossel = lazy(() => import("../../components/slider"));
 
 const Home = () => {
   return (
@@ -121,7 +137,7 @@ const Home = () => {
           <BoxAnimation animation="top">
             <SpecCard
               h3="Juliana de Sá"
-              img={michele}
+              img={juliana}
               p="Fisioterapeuta especializada em Saúde da Mulher e Instrutora do Método Pilates"
               span="CREFITO-3/226407-F"
             />
@@ -137,7 +153,7 @@ const Home = () => {
           <BoxAnimation animation="top">
             <SpecCard
               h3="Thays Roncato"
-              img={michele}
+              img={thais}
               p="Fisioterapeuta especializada em Saúde da Mulher e Mestre em Ginecologia e Obstetrícia"
               span="CREFITO-3/296198-F"
             />
@@ -145,7 +161,7 @@ const Home = () => {
           <BoxAnimation animation="bottom">
             <SpecCard
               h3="Cibele Ferrari"
-              img={michele}
+              img={cibele}
               p="Fisioterapeuta Acupunturista especializada em Saúde da Mulher e Gestantes"
               span="CREFITO-3/111858-F"
             />
@@ -172,9 +188,9 @@ const Home = () => {
             </BoxAnimation>
           </div>
         </div>
-        <React.Suspense fallback={<Loader />}>
+        <Suspense fallback={<Loader />}>
           <Carrossel />
-        </React.Suspense>
+        </Suspense>
       </Container>
 
       <Container sectionClass="bgGoogle" mainClass="google">
@@ -239,9 +255,9 @@ const Home = () => {
       <Container mainClass="googleMaps">
         <span className="spanLabel">Localização acessível</span>
         <h3>Venha nos fazer uma visita!</h3>
-        <React.Suspense fallback={<Loader />}>
+        <Suspense fallback={<Loader />}>
           <Maps />
-        </React.Suspense>
+        </Suspense>
 
         <div className="adressMaps">
           <div className="adressText">

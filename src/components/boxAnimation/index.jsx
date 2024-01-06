@@ -6,7 +6,7 @@ import "./styles.css";
 const BoxAnimation = ({ animation, addClass, children }) => {
   useEffect(() => {
     const target = document.querySelectorAll("[data-anime]");
-    const windowTop = window.innerHeight * 0.5;
+    const windowTop = window.innerHeight * 0.6;
 
     const animeScroll = () => {
       target.forEach((e) => {
