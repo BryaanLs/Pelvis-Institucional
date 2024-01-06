@@ -12,7 +12,9 @@ import { NavLink } from "react-router-dom";
 import React from "react";
 import Loader from "../../components/loader";
 import CardHome from "../../components/card";
-import peopleIcon from "../../assets/img/svgs/peopleIcon.svg";
+import acolhimento from "../../assets/img/svgs/acolhimento.svg";
+import cuidado from "../../assets/img/svgs/cuidado.svg";
+import notaMaxima from "../../assets/img/svgs/notaMaxima.svg";
 import GoogleCard from "../../components/googleCard";
 import CtaCard from "../../components/ctaCard";
 const Maps = React.lazy(() => import("../../components/maps"));
@@ -47,21 +49,21 @@ const Home = () => {
         <div className="cardsHome">
           <BoxAnimation animation="left">
             <CardHome
-              img={peopleIcon}
+              img={acolhimento}
               h3="Acolhimento e Empatia "
               p="Aqui você é recebida de braços abertos e vai se sentir em casa!"
             />
           </BoxAnimation>
           <BoxAnimation animation="left">
             <CardHome
-              img={peopleIcon}
+              img={cuidado}
               h3="Cuidado Integral"
               p="Profissionais especializadas e em constante atualização."
             />
           </BoxAnimation>
           <BoxAnimation animation="left">
             <CardHome
-              img={peopleIcon}
+              img={notaMaxima}
               h3="Nota Máxima no Google"
               p="Pacientes 100% satisfeitas! "
             />

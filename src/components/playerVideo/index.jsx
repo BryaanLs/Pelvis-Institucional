@@ -51,18 +51,18 @@ const PlayerVideo = () => {
 
   return (
     <div className="custom-video-player">
-      <video id="myVideo" ref={videoRef} autoPlay={true} playsInline>
+      <video id="myVideo" ref={videoRef} autoPlay playsInline>
         <source src={videoSource} type="video/mp4" />
         Seu navegador não suporta o elemento de vídeo.
       </video>
       <div className="controls">
         <button
           onClick={togglePlay}
-          className={`play-pause-button ${isPlaying ? "paused" : ""}`}
+          className={`play-pause-button ${isPlaying ? "paused" : "playing"}`}
         ></button>
         <input
           type="range"
-          className={`seekBar ${isPlaying ? "paused" : ""}`}
+          className={`seekBar ${isPlaying ? "paused" : "playing"}`}
           id="seekBar"
           value={progress}
           onChange={handleVideoSeek}

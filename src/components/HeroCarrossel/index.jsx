@@ -17,7 +17,7 @@ const HeroCarrossel = () => {
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
         autoplay={{ delay: 5000 }}
         effect="fade"
-        loop={true}
+        loop={false}
         spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}
