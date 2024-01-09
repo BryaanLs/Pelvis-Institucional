@@ -120,25 +120,24 @@ const QuemSomos = () => {
             </span>
             <ul>
               <li>
-                Graduada em Fisioterapia pela Universidade de Brasília (UnB);
+                Graduada em Fisioterapia pela Universidade Presbiteriana
+                Mackenzie;
               </li>
               <li>
                 Pós-graduada pelo Programa de Residência Multiprofissional em
                 Saúde da Mulher (PUC-Campinas);
               </li>
+              <li>Formação completa no método Pilates;</li>
               <li>
-                Pós-graduada pelo Programa de Especialização em Fisioterapia
-                aplicada à Saúde da Mulher (UNICAMP/CAISM);
+                Diversos cursos na área (disfunções sexuais femininas,
+                disfunções pélvicas masculinas, laserterapia em uroginecologia,
+                dryneedling…);
               </li>
-              <li>
-                Atuou como fisioterapeuta no Centro Obstétrico do Hospital
-                SEPACO;
-              </li>
-              <li>Doula e Educadora Perinatal (Matriusca);</li>
               <li>
                 Sócia e fundadora da PELVIE - Fisioterapia Pélvica Funcional.
               </li>
             </ul>
+
             <span>CREFITO-3/226407-F</span>
           </div>
         </Curriculum>

@@ -29,28 +29,9 @@
 [data-anime].animate {
   opacity: 1;
   scale: 1;
+
   transform: translate3d(0, 0, 0);
 }
-
-/* .boxAnimation {
-  color: unset;
-  display: unset;
-  width: unset;
-  height: unset;
-  background-color: unset;
-  flex-direction: unset;
-  justify-content: unset;
-  align-items: unset;
-  margin: unset;
-  left: unset;
-  right: unset;
-  top: unset;
-  bottom: unset;
-  position: unset;
-  overflow: unset;
-  position: unset;
-  padding: unset;
-} */
 
 .boxAnimation {
   display: block;

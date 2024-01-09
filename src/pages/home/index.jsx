@@ -50,7 +50,7 @@ const Home = () => {
                 <br />
                 <strong>reabilitação pélvica</strong>
               </h1>
-              <span>Por que escolher a Clínica Pelvie?</span>
+              <span>Por que escolher a PELVIE?</span>
             </div>
           </BoxAnimation>
           <BoxAnimation animation="top">
@@ -215,10 +215,9 @@ const Home = () => {
           </BoxAnimation>
           <BoxAnimation animation="right">
             <GoogleCard
-              h3="Marcela Celi"
-              p="Profissionais excelentes, carinhosas e com talento excepcional para
-          conduzir tratamentos tão íntimos sem desconforto. Vou voltar em todas as
-          minhas próximas 8 gestações e pós parto :)"
+              googleHref="https://g.co/kgs/oNUwVi5 "
+              h3="Beatriz Lopes"
+              p="Minha experiência com a Pelvie não poderia ser melhor. Fiz fisio pélvica para o parto e quando chegou perto do prazo máximo meu corpo não dava sinais e meu bebê estava super alto, decidi fazer acupuntura com a Cibele. Em dois dias entrei em trabalho de parto! Tive um parto dos sonhos e mega rápido. Obrigada equipe por todo apoio e acolhimento!"
             />
           </BoxAnimation>
           <BoxAnimation animation="left">
