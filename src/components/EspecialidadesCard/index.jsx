@@ -1,4 +1,5 @@
 /* eslint-disable react/prop-types */
+import { NavLink } from "react-router-dom";
 import "./styles.css";
 
 const EspecialidadesCard = ({ h3, img, altImg, href, aText, children }) => {
@@ -11,7 +12,8 @@ const EspecialidadesCard = ({ h3, img, altImg, href, aText, children }) => {
         </a>
       </div>
       {children}
-      <a href={href}>{aText}</a>
+      <NavLink to={href}>{aText}</NavLink>
+      {/* <a href={href}>{aText}</a> */}
     </div>
   );
 };

@@ -31,8 +31,8 @@ const Footer = () => {
         <div className="contatoFooter">
           <h3>Contato</h3>
 
-          <a href="mailto:clinica@gmail.com" target="_blank">
-            clinica@gmail.com
+          <a href="mailto:secretaria@pelviefisioterapia.com.br" target="_blank">
+            secretaria@pelviefisioterapia.com.br
           </a>
           <a href="tel:+5511913112992" target="_blank">
             (11) 91311-2992
@@ -60,10 +60,10 @@ const Footer = () => {
                 href="https://www.instagram.com/pelviefisioterapia?igsh=cTg1d3NxejRnbTNs"
                 target="_blank"
               >
-                <img src={icoInsta} alt="icone do instagram" />
+                <img src={icoInsta} alt="icone do instagram" loading="lazy" />
               </a>
               <a href="https://wa.link/ibbufu" target="_blank">
-                <img src={icoWhats} alt="icone do whatsapp" />
+                <img src={icoWhats} alt="icone do whatsapp" loading="lazy" />
               </a>
             </nav>
           </div>

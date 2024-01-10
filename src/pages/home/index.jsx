@@ -21,7 +21,9 @@ import { NavLink } from "react-router-dom";
 import { lazy, Suspense } from "react";
 
 //Fotos
-import michelle from "../../assets/img/michelle.png";
+import fisioPelvica from "../../assets/img/webp/especialidadeMobile1.webp";
+import acupuntura from "../../assets/img/webp/especialidadeMobile2.webp";
+import pilates from "../../assets/img/webp/especialidadeMobile3.webp";
 import michele from "../../assets/img/webp/michelle.webp";
 import juliana from "../../assets/img/webp/juliana.webp";
 import thais from "../../assets/img/webp/thais.webp";
@@ -96,9 +98,9 @@ const Home = () => {
             <EspecialidadesCard
               h3="Fisioterapia Pélvica"
               aText="Saiba Mais"
-              img={michelle}
-              altImg={"Foto da Dra. Michelle"}
-              href={"#"}
+              img={fisioPelvica}
+              altImg={"Foto da Dra. Juliana com uma paciente"}
+              href="/Tratamento"
             >
               <p>
                 É uma especialidade da fisioterapia que busca tratar e prevenir
@@ -114,16 +116,17 @@ const Home = () => {
             <EspecialidadesCard
               h3="Acupuntura"
               aText="Saiba Mais"
-              img={michelle}
-              altImg={"Foto da Dra. Michelle"}
-              href={"#"}
+              img={acupuntura}
+              altImg={"Foto mostrando o acupunturismo"}
+              href="/Tratamento"
             >
               <p>
                 É uma especialidade da Medicina Tradicional Chinesa que tem foco
                 no tratamento de problemas relacionados à saúde. Quando voltada
                 à saúde da mulher, busca o reequilíbrio de desarmonias em suas
-                diferentes fases da vida, como no período menstrual, menopausa,
-                gestação, pré e pós-parto, entre outras.
+                diferentes fases da vida, como no período menstrual, <b>na </b>
+                menopausa, <b>na</b> gestação, <b>no</b> pré e pós-parto, entre
+                outras.
               </p>
             </EspecialidadesCard>
           </BoxAnimation>
@@ -131,16 +134,16 @@ const Home = () => {
             <EspecialidadesCard
               h3="Pilates"
               aText="Saiba Mais"
-              img={michelle}
-              altImg={"Foto da Dra. Michelle"}
-              href={"#"}
+              img={pilates}
+              altImg={"Foto da Dra. Juliana dando aula de pilates"}
+              href="/Tratamento"
             >
               <p>
                 É um método de exercícios que visa trabalhar a conexão entre
                 mente e corpo. Sua prática traz benefícios como melhora da
                 flexibilidade e da mobilidade, ganho de força muscular e alívio
-                de dores. Oferecemos aulas de pilates com fisioterapeuta
-                especializada, totalmente focadas para gestantes e mulheres no
+                de dores. Oferecidas por fisioterapeuta especializada, as aulas
+                de Pilates são totalmente focadas em gestantes e em mulheres no
                 pós-parto.
               </p>
             </EspecialidadesCard>
@@ -207,6 +210,7 @@ const Home = () => {
                   alt="logo do whatsapp"
                   width="20"
                   height="20"
+                  loading="lazy"
                 />
               </a>
             </BoxAnimation>

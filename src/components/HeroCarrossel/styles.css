@@ -33,7 +33,7 @@
 }
 .swiper-slide img {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
   object-position: 50%;
 }
@@ -53,6 +53,7 @@
     margin-top: 80px;
   }
 }
+
 @media (max-width: 1070px) {
   .swiper-slide img {
     width: 100%;
@@ -71,7 +72,7 @@
     margin-right: 20px;
   }
 }
-@media (max-width: 960px) {
+/* @media (max-width: 960px) {
   .swiper-button-next::after,
   .swiper-button-prev::after {
     display: none;
@@ -98,4 +99,4 @@
   .slide-5 img {
     object-position: 70%;
   }
-}
+} */
