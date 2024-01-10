@@ -31,6 +31,7 @@ import cibele from "../../assets/img/webp/cibele.webp";
 import acolhimento from "../../assets/img/svgs/acolhimento.svg";
 import cuidado from "../../assets/img/svgs/cuidado.svg";
 import notaMaxima from "../../assets/img/svgs/notaMaxima.svg";
+import whats from "../../assets/img/svgs/whatsappBranco.svg";
 
 // Lazy imports
 const Maps = lazy(() => import("../../components/maps"));
@@ -48,7 +49,7 @@ const Home = () => {
               <h1>
                 Somos uma clínica especializada em
                 <br />
-                <strong>reabilitação pélvica</strong>
+                <strong>Reabilitação Pélvica</strong>
               </h1>
               <span>Por que escolher a PELVIE?</span>
             </div>
@@ -74,7 +75,7 @@ const Home = () => {
             <CardHome
               img={cuidado}
               h3="Cuidado Integral"
-              p="Profissionais especializadas e em constante atualização."
+              p="Um olhar abrangente com foco na prevenção e na promoção da saúde."
             />
           </BoxAnimation>
           <BoxAnimation animation="left">
@@ -88,7 +89,7 @@ const Home = () => {
       </Container>
 
       <Container mainClass="especialidadesMain">
-        <span className="spanLabel">Cuidado completo!</span>
+        <span className="spanLabel">Cuidado completo</span>
         <h3>Conheça nossas especialidades</h3>
         <div className="especialidades">
           <BoxAnimation animation="left">
@@ -98,10 +99,16 @@ const Home = () => {
               img={michelle}
               altImg={"Foto da Dra. Michelle"}
               href={"#"}
-              p={
-                "É uma especialidade da fisioterapia que busca tratar e prevenir disfunções relacionadas ao assoalho pélvico.  Indicada para o tratamento de incontinência urinária, prolapsos genitais, disfunções sexuais, constipação intestinal, preparação para o parto e na recuperação pós-parto, como a diástase abdominal, e outros."
-              }
-            />
+            >
+              <p>
+                É uma especialidade da fisioterapia que busca tratar e prevenir
+                disfunções relacionadas ao assoalho pélvico. Indicada para o
+                tratamento de incontinência urinária, prolapsos genitais,
+                disfunções sexuais, constipação intestinal, preparação para o
+                parto e na recuperação pós-parto, como a diástase abdominal e
+                outros.
+              </p>
+            </EspecialidadesCard>
           </BoxAnimation>
           <BoxAnimation animation="top">
             <EspecialidadesCard
@@ -110,10 +117,15 @@ const Home = () => {
               img={michelle}
               altImg={"Foto da Dra. Michelle"}
               href={"#"}
-              p={
-                "É uma especialidade da Medicina Tradicional Chinesa que tem foco no tratamento de problemas relacionados à saúde. Quando voltada à saúde da mulher, busca o reequilíbrio de desarmonias em suas diferentes fases da vida, como no período menstrual, menopausa, gestação, pré e pós-parto, entre outras."
-              }
-            />
+            >
+              <p>
+                É uma especialidade da Medicina Tradicional Chinesa que tem foco
+                no tratamento de problemas relacionados à saúde. Quando voltada
+                à saúde da mulher, busca o reequilíbrio de desarmonias em suas
+                diferentes fases da vida, como no período menstrual, menopausa,
+                gestação, pré e pós-parto, entre outras.
+              </p>
+            </EspecialidadesCard>
           </BoxAnimation>
           <BoxAnimation animation="right">
             <EspecialidadesCard
@@ -122,10 +134,16 @@ const Home = () => {
               img={michelle}
               altImg={"Foto da Dra. Michelle"}
               href={"#"}
-              p={
-                "É um método de exercícios que visa trabalhar a conexão entre mente e corpo. Sua prática traz benefícios como melhora da flexibilidade e da mobilidade, ganho de força muscular e alívio de dores. Oferecemos aulas de pilates com fisioterapeuta especializada, totalmente focadas para gestantes e mulheres no pós-parto."
-              }
-            />
+            >
+              <p>
+                É um método de exercícios que visa trabalhar a conexão entre
+                mente e corpo. Sua prática traz benefícios como melhora da
+                flexibilidade e da mobilidade, ganho de força muscular e alívio
+                de dores. Oferecemos aulas de pilates com fisioterapeuta
+                especializada, totalmente focadas para gestantes e mulheres no
+                pós-parto.
+              </p>
+            </EspecialidadesCard>
           </BoxAnimation>
         </div>
       </Container>
@@ -172,8 +190,8 @@ const Home = () => {
       <Container sectionClass="ourSpace" id="ourSpace">
         <div className="titleCarrossel">
           <div className="titleCarrosselText">
-            <span className="spanLabel">Localização acessível</span>
-            <h3>Por dentro do nosso espaço</h3>
+            <span className="spanLabel">Ambiente moderno e aconchegante</span>
+            <h3>Conheça nosso espaço</h3>
           </div>
           <div className="titleCarrosselLinks">
             <BoxAnimation animation="left">
@@ -182,8 +200,14 @@ const Home = () => {
               </NavLink>
             </BoxAnimation>
             <BoxAnimation animation="right">
-              <a href="#" className="ctaBtn2">
-                Fale com nossa equipe
+              <a href="#" className="ctaBtnZap">
+                Reservar um horário
+                <img
+                  src={whats}
+                  alt="logo do whatsapp"
+                  width="20"
+                  height="20"
+                />
               </a>
             </BoxAnimation>
           </div>
@@ -274,13 +298,12 @@ const Home = () => {
           </div>
         </div>
 
-        <CtaCard
-          animationBtnUm="right"
-          animationBtnDois="left"
-          p="Acolhimento, empatia e segurança: 
-aqui os pacientes se sentem em casa!
-"
-        />
+        <CtaCard animationBtnUm="right" animationBtnDois="left">
+          <p>
+            Acolhimento, empatia e segurança:
+            <br /> aqui os pacientes se sentem em casa!
+          </p>
+        </CtaCard>
       </Container>
     </>
   );

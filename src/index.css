@@ -197,6 +197,27 @@ button:hover {
   background-color: var(--roxo8);
 }
 
+.ctaBtnZap {
+  background-color: var(--roxo4);
+  border: 2px solid var(--roxo4);
+  color: var(--branco);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s ease-in-out;
+  border-radius: 6px;
+}
+
+.ctaBtnZap img {
+  margin-left: 1rem;
+}
+
+.ctaBtnZap:hover {
+  transform: scale(105%);
+  background-color: var(--roxo3);
+  border: 2px solid var(--roxo5);
+}
+
 *:focus {
   outline: none;
 }

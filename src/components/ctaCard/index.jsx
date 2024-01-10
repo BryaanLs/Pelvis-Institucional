@@ -4,17 +4,12 @@ import logoPelvieCta from "../../assets/img/svgs/logoPelvieCtaCard.svg";
 import whats from "../../assets/img/svgs/whatsappBranco.svg";
 import google from "../../assets/img/svgs/googleLogo.svg";
 import "./styles.css";
-const CtaCard = ({ animationBtnUm, animationBtnDois, p, googleBtn }) => {
+const CtaCard = ({ animationBtnUm, animationBtnDois, googleBtn, children }) => {
   return (
     <div className="ctaCard">
       <img src={logoPelvieCta} alt="logo da pelvie" width="140" height="141" />
-      <p>{p}</p>
+      {children}
       <div className="ctaButtonsBox">
-        <p>
-          <b>5 </b>estrelas no <strong>Google!</strong>
-          <br />
-          Quem escolheu a Pelvie, gostou muito
-        </p>
         <div className="ctaButtons">
           {googleBtn && (
             <BoxAnimation animation={animationBtnUm}>
@@ -25,7 +20,7 @@ const CtaCard = ({ animationBtnUm, animationBtnDois, p, googleBtn }) => {
             </BoxAnimation>
           )}
           <BoxAnimation animation={animationBtnDois}>
-            <a href="#" className="ctaBtnDois">
+            <a href="#" className="ctaBtnZap">
               Reservar um horário
               <img src={whats} alt="logo do whatsapp" width="20" height="20" />
             </a>

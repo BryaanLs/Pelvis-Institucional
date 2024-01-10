@@ -193,7 +193,7 @@ const QuemSomos = () => {
           <div className="descriptionCV">
             <h2>Dra. Thays Roncato</h2>
             <span className="subtitleDra">
-              FFisioterapeuta especializada em Saúde da Mulher e Mestre em
+              Fisioterapeuta especializada em Saúde da Mulher e Mestre em
               Ginecologia e Obstetrícia
             </span>
             <ul>
@@ -265,10 +265,12 @@ const QuemSomos = () => {
       </Container>
 
       <Container>
-        <CtaCard
-          googleBtn={true}
-          p="Profissionais qualificadas para te oferecer um cuidado completo e atualizado."
-        />
+        <CtaCard googleBtn={true}>
+          <p>
+            Profissionais qualificadas para te oferecer um cuidado completo e
+            atualizado.
+          </p>
+        </CtaCard>
       </Container>
     </>
   );

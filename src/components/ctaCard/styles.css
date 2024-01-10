@@ -15,7 +15,7 @@
   font-family: var(--sourceSans);
   color: var(--roxo4);
   text-align: center;
-  hyphens: auto;
+  /* hyphens: auto; */
   font-size: 2.2rem;
   font-style: italic;
 }
@@ -60,12 +60,6 @@
   color: var(--roxo4);
 }
 
-.ctaBtnDois {
-  background-color: var(--roxo4);
-  border: 2px solid var(--roxo4);
-  color: var(--branco);
-}
-
 .ctaBtnUm:hover {
   background-color: var(--roxo4);
   color: var(--branco);
@@ -74,12 +68,6 @@
 
 .ctaBtnUm:hover img {
   filter: contrast(0) brightness(1000%);
-}
-
-.ctaBtnDois:hover {
-  transform: scale(105%);
-  background-color: var(--roxo3);
-  border: 2px solid var(--roxo5);
 }
 
 @media (max-width: 1000px) {

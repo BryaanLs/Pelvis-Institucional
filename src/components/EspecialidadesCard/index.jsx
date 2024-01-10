@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import "./styles.css";
 
-const EspecialidadesCard = ({ h3, img, altImg, p, href, aText }) => {
+const EspecialidadesCard = ({ h3, img, altImg, href, aText, children }) => {
   return (
     <div className="especCard">
       <h3>{h3}</h3>
@@ -10,7 +10,7 @@ const EspecialidadesCard = ({ h3, img, altImg, p, href, aText }) => {
           <img src={img} alt={altImg} width={370} />
         </a>
       </div>
-      <p>{p}</p>
+      {children}
       <a href={href}>{aText}</a>
     </div>
   );
