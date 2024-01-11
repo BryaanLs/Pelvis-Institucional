@@ -10,9 +10,9 @@ const HeroCarrossel = () => {
     <div className="containerSwiper">
       <Swiper
         modules={[Autoplay, EffectFade, Pagination, Navigation]}
-        autoplay={{ delay: 500000000 }}
+        autoplay={{ delay: 5000 }}
         effect="fade"
-        loop={false}
+        loop={true}
         spaceBetween={0}
         slidesPerView={1}
         pagination={{ clickable: true }}

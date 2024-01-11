@@ -4,7 +4,7 @@
 
 .custom-video-player video {
   border-radius: 2rem;
-  border: 2px solid var(--branco);
+  border: 3px solid var(--branco);
   height: 700px;
 }
 
@@ -20,8 +20,6 @@
 }
 
 .play-pause-button {
-  /* background-color: red; */
-
   position: relative;
 }
 
@@ -63,16 +61,6 @@
   left: 0;
   animation: playBtn 0.5s ease-in-out forwards;
 }
-
-/* .play-pause-button.paused {
-  
-  background-repeat: no-repeat;
- 
-  transform: scale(107%);
-  margin-left: 5px;
-} */
-
-/*  */
 
 .seekBar.paused {
   animation: playBtn 0.5s ease-in-out forwards;

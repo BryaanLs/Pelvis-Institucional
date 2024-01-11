@@ -14,14 +14,14 @@ const CtaCard = ({ animationBtnUm, animationBtnDois, googleBtn, children }) => {
           {googleBtn && (
             <BoxAnimation animation={animationBtnUm}>
               <a href="#" className="ctaBtnUm">
-                Ver Avaliações
+                Ver avaliações
                 <img src={google} alt="logo do google" width="20" height="20" />
               </a>
             </BoxAnimation>
           )}
           <BoxAnimation animation={animationBtnDois}>
             <a href="#" className="ctaBtnZap">
-              Reservar um horário
+              Agendar um horário
               <img src={whats} alt="logo do whatsapp" width="20" height="20" />
             </a>
           </BoxAnimation>

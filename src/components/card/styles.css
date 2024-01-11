@@ -15,18 +15,17 @@
   text-align: center;
 }
 
-.card h3 {
-  font-size: 2.4rem;
-  color: var(--roxo4);
-  padding-bottom: 2rem;
+.card h2 {
+  font-size: 2.4rem !important;
+  color: var(--roxo4) !important;
+  padding-bottom: 2rem !important;
   position: relative;
 }
 
-.card h3::after {
+.card h2::after {
   content: "";
   width: 90%;
   height: 1px;
-  /* box-shadow: 0 0 3px var(--roxo4); */
   border-radius: 5rem;
   background-color: var(--roxo4);
   position: absolute;
@@ -40,4 +39,14 @@
   font-size: 1.7rem;
   font-weight: 500;
   padding-bottom: 1rem;
+}
+
+.bigCard.card {
+  gap: 1rem;
+  padding: 3rem 2rem;
+}
+
+.bigCard.card h2 {
+  padding: 0;
+  margin: 2rem 0;
 }

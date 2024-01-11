@@ -69,22 +69,32 @@ const Home = () => {
           <BoxAnimation animation="left">
             <CardHome
               img={acolhimento}
-              h3="Acolhimento e Empatia "
-              p="Aqui você é recebida de braços abertos e vai se sentir em casa!"
+              h2="Acolhimento e Empatia "
+              p={
+                <p>
+                  Aqui você é recebida de braços abertos e vai se sentir em
+                  casa!
+                </p>
+              }
             />
           </BoxAnimation>
           <BoxAnimation animation="left">
             <CardHome
               img={cuidado}
-              h3="Cuidado Integral"
-              p="Um olhar abrangente com foco na prevenção e na promoção da saúde."
+              h2="Cuidado Integral"
+              p={
+                <p>
+                  Um olhar abrangente com foco na prevenção e na promoção da
+                  saúde.
+                </p>
+              }
             />
           </BoxAnimation>
           <BoxAnimation animation="left">
             <CardHome
               img={notaMaxima}
-              h3="Nota Máxima no Google"
-              p="Pacientes 100% satisfeitas! "
+              h2="Nota Máxima no Google"
+              p={<p>Pacientes 100% satisfeitas!</p>}
             />
           </BoxAnimation>
         </div>

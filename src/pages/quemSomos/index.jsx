@@ -36,22 +36,22 @@ const QuemSomos = () => {
             <PlayerVideo />
           </Suspense>
         </div>
-
         <div className="quemSomosCards">
           <div className="heroCard">
             <h2>Nossa Missão</h2>
             <p>
-              TRANSFORMAR vidas através de um cuidado ACOLHEDOR, promovendo um
-              impacto POSITIVO e DURADOURO na saúde das pessoas.
+              <b>TRANSFORMAR</b> vidas através de um cuidado <b>ACOLHEDOR</b>,
+              promovendo um impacto <b>POSITIVO</b> e <b>DURADOURO</b> na saúde
+              das pessoas.
             </p>
           </div>
 
           <div className="heroCard">
             <h2>Nossa Visão </h2>
             <p>
-              Oferecer uma experiência tão EXCEPCIONAL a ponto que sejamos
-              SEMPRE A PRIMEIRA ESCOLHA para quem busca Fisioterapia Pélvica na
-              grande São Paulo.
+              Oferecer uma experiência tão <b>EXCEPCIONAL</b> a ponto que
+              <b> sejamos sempre a PRIMEIRA ESCOLHA</b> para quem busca
+              Fisioterapia Pélvica na grande São Paulo.
             </p>
           </div>
         </div>
@@ -63,36 +63,83 @@ const QuemSomos = () => {
           <BoxAnimation animation="left">
             <Card
               img={peopleIcon}
-              h3="ACOLHIMENTO"
-              p="Na Pelvie, acreditamos que o ACOLHIMENTO é tão fundamental quanto o tratamento em si. Oferecemos um atendimento empático e com escuta ativa, onde nossos pacientes se sintam seguros e em casa, com total atenção às suas necessidades."
+              h2="ACOLHIMENTO"
+              p={
+                <p>
+                  Na Pelvie, acreditamos que o <strong>ACOLHIMENTO</strong> é
+                  tão fundamental quanto o tratamento em si. Oferecemos um
+                  atendimento empático e com escuta ativa, onde nossos pacientes
+                  se sintam seguros e em casa, com total atenção às suas
+                  necessidades.
+                </p>
+              }
+              addClass="bigCard"
             />
           </BoxAnimation>
           <BoxAnimation animation="top">
             <Card
               img={peopleIcon}
-              h3="PREVENÇÃO"
-              p="Nosso trabalho vai além do momento presente, pois valorizamos orientações, mudanças de comportamento e hábitos saudáveis que proporcionam benefícios a longo prazo. PREVENÇÃO é uma prioridade e queremos que nossos pacientes levem o conhecimento fisioterapêutico adquirido para toda a vida."
+              h2="PREVENÇÃO"
+              p={
+                <p>
+                  Nosso trabalho vai além do momento presente, pois valorizamos
+                  orientações, mudanças de comportamento e hábitos saudáveis que
+                  proporcionam benefícios a longo prazo.
+                  <strong>PREVENÇÃO</strong> é uma prioridade e queremos que
+                  nossos pacientes levem o conhecimento fisioterapêutico
+                  adquirido para toda a vida.
+                </p>
+              }
+              addClass="bigCard"
             />
           </BoxAnimation>
           <BoxAnimation animation="right">
             <Card
               img={peopleIcon}
-              h3="APRENDIZADO"
-              p="Acreditamos no APRENDIZADO CONTÍNUO e valorizamos a troca de experiências e informações com outros profissionais, assim como com nossos pacientes. Estamos comprometidas em fornecer um cuidado completo e atualizado, visando sempre o bem-estar e a saúde das pessoas que atendemos."
+              h2="APRENDIZADO"
+              p={
+                <p>
+                  Acreditamos no <strong>APRENDIZADO CONTÍNUO</strong> e
+                  valorizamos a troca de experiências e informações com outros
+                  profissionais, assim como com nossos pacientes. Estamos
+                  comprometidas em fornecer um cuidado completo e atualizado,
+                  visando sempre o bem-estar e a saúde das pessoas que
+                  atendemos.
+                </p>
+              }
+              addClass="bigCard"
             />
           </BoxAnimation>
           <BoxAnimation animation="left">
             <Card
               img={peopleIcon}
-              h3="IMPACTO SOCIAL"
-              p="Sabendo dos benefícios da fisioterapia pélvica para a saúde da população, nosso objetivo a médio-longo prazo é causar um IMPACTO SOCIAL significativo, levando esse cuidado a um número cada vez maior de pessoas, especialmente aquelas que mais necessitam."
+              h2="IMPACTO SOCIAL"
+              p={
+                <p>
+                  Sabendo dos benefícios da fisioterapia pélvica para a saúde da
+                  população, nosso objetivo a médio-longo prazo é causar um
+                  <strong>IMPACTO SOCIAL</strong> significativo, levando esse
+                  cuidado a um número cada vez maior de pessoas, especialmente
+                  aquelas que mais necessitam.
+                </p>
+              }
+              addClass="bigCard"
             />
           </BoxAnimation>
           <BoxAnimation animation="right">
             <Card
               img={peopleIcon}
-              h3="CELEBRAÇÃO"
-              p="Apesar do trabalho intenso, buscamos sempre momentos para CELEBRAÇÃO. Acreditamos que as risadas, descontração e leveza são essenciais para renovar nossas energias e continuar oferecendo o melhor atendimento a todos os nossos pacientes."
+              h2="CELEBRAÇÃO"
+              p={
+                <p>
+                  Apesar do trabalho intenso, buscamos sempre momentos para
+                  <strong>CELEBRAÇÃO</strong>. Acreditamos que as risadas,
+                  descontração e leveza são essenciais para renovar nossas
+                  energias e continuar oferecendo o melhor atendimento a todos
+                  os nossos pacientes.
+                </p>
+              }
+              addClass="bigCard"
             />
           </BoxAnimation>
         </div>
@@ -267,8 +314,8 @@ const QuemSomos = () => {
       <Container>
         <CtaCard googleBtn={true}>
           <p>
-            Profissionais qualificadas para te oferecer um cuidado completo e
-            atualizado.
+            Profissionais qualificadas para te oferecer
+            <br /> um cuidado completo e atualizado.
           </p>
         </CtaCard>
       </Container>

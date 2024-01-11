@@ -2,12 +2,12 @@
 // import React from 'react'
 import "./styles.css";
 
-const Card = ({ img, h3, p, addClass }) => {
+const Card = ({ img, h2, p, addClass }) => {
   return (
-    <div className={`card ${addClass}`}>
+    <div className={` ${addClass} card`}>
       <img src={img} alt="icone de uma pessoa" width="53" height="50" />
-      <h3>{h3}</h3>
-      <p>{p}</p>
+      <h2>{h2}</h2>
+      {p}
     </div>
   );
 };

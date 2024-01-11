@@ -10,6 +10,7 @@ const Maps = () => {
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
+        title="localização da PELVIE em São Paulo"
       ></iframe>
     </div>
   );

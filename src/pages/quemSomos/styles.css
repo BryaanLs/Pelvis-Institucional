@@ -1,18 +1,29 @@
 .bgHeroQuemSomos {
-  background: url(../../assets/img/bgHeroQuemSomos.png);
+  background: url(../../assets/img/bgTesteQuemSomos.png);
   min-height: 110vh;
-  padding-top: 100px;
+  padding-top: 70px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroQuemSomosContent {
   display: flex;
+  justify-content: center;
   gap: 5rem;
   align-items: center;
   padding: 3rem;
 }
 
+.quemSomosVideo {
+  margin-left: 3rem;
+}
+
+.quemSomosCards {
+  width: 500px;
+}
 .heroCard {
   background-color: var(--cinza4);
   color: var(--branco);
@@ -32,7 +43,8 @@
 }
 
 .heroCard h2 {
-  /* background-color: red; */
+  font-size: 2.7rem;
+
   border-radius: 25px 25px 5px 25px;
   padding-left: 4rem;
   background: linear-gradient(
@@ -47,7 +59,7 @@
 
 .heroCard p {
   color: var(--branco);
-  font-size: 2rem;
+  font-size: 1.7rem;
   padding: 0 2rem;
   font-weight: 500;
 }
@@ -91,11 +103,11 @@
 
 .bgTeam {
   margin: 4rem 0;
-  background: url(../../assets/img/webp/bgTemporario.webp);
-  min-height: 80vh;
+  background: url(../../assets/img/teamPic.png);
+  min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center center;
+  background-position: 20% 40%;
 }
 
 .professionalDescription {
@@ -151,9 +163,21 @@
     flex-direction: column;
   }
 
+  .quemSomosCards {
+    width: 100%;
+  }
+
   .heroQuemSomosContent video {
     height: 80% !important;
     width: 100%;
+  }
+
+  .quemSomosVideo {
+    margin-left: 0;
+  }
+
+  .bgHeroQuemSomos {
+    padding-top: 0;
   }
 }
 
@@ -161,6 +185,15 @@
   .bgCurriculumNoPic,
   .bgCurriculum {
     min-height: max-content;
+  }
+}
+
+@media (max-width: 800px) {
+  .bgTeam {
+    margin: 4rem 0;
+    background: url(../../assets/img/teamPicMobile.png);
+    background-position: center center;
+    background-size: cover;
   }
 }
 @media (max-width: 600px) {
