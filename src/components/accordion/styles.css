@@ -1,5 +1,5 @@
 .accordion,
-.accordionVerde {
+.accordionInterno {
   border-radius: 20px;
   border: 1px solid var(--roxo4);
   background: #fff;
@@ -8,29 +8,29 @@
   max-height: 100px;
   overflow-y: hidden;
   border-radius: 10px;
-  background: linear-gradient(90deg, #9c59ff 6.88%, #7d56a8 81.16%);
   position: relative;
   margin: 3rem 0;
+  background: linear-gradient(270deg, #bee596 0%, #56a88a 87%);
+  border-color: var(--verde3);
 }
+
+.noBall.bolinha::after,
+.noBall.bolinha::before {
+  display: none;
+}
+
 .bolinha {
   position: relative;
 }
-.bolinha::before,
-.verde::before {
-  content: url(../../assets/img/svgs/pelvieFundoRoxoAccordion.svg);
+.bolinha::before {
+  content: url(../../assets/img/svgs/pelvieFundoVerdeAccordion.svg);
   position: absolute;
   left: -60px;
   top: -45px;
   z-index: 3;
   transform: scale(60%);
 }
-.verde::before {
-  content: url(../../assets/img/svgs/pelvieFundoVerdeAccordion.svg);
-}
-.accordionVerde {
-  background: linear-gradient(270deg, #bee596 0%, #56a88a 87%);
-  border-color: var(--verde3);
-}
+
 .open {
   animation: opened 9s ease forwards;
 }
@@ -47,6 +47,8 @@
   color: var(--branco);
   font-weight: normal;
   font-family: var(--sourceSans);
+  text-align: center;
+  width: 100%;
 }
 .accordionHeader button {
   transition: rotate 0.2s linear;
@@ -74,12 +76,8 @@
   font-size: 2.6rem;
   font-family: var(--sourceSans);
   font-weight: 500;
-  color: var(--roxo4);
-  margin: 1rem 0;
-}
-.accordionVerde h3,
-.accordionVerde h4 {
   color: var(--verde3);
+  margin: 1rem 0;
 }
 
 .accordionText h4 {
@@ -89,16 +87,12 @@
 
 .accordionText ul li {
   list-style-type: disc;
-  margin-left: 1.5rem;
-  color: var(--roxo4);
-}
-
-.accordionVerde ul li {
+  margin: 0.5rem 0;
+  margin-left: 6rem;
   color: var(--verde3);
 }
 
-.accordionText ul p,
-.accordionVerde ul p {
+.accordionText ul p {
   margin: 0;
   padding: 0;
 }
@@ -107,6 +101,28 @@
   text-align: justify;
   hyphens: auto;
 }
+/* 
+.accordionInterno p {
+  color: var(--branco);
+} */
+
+.accordionInterno h2 {
+  width: max-content;
+  text-align: center;
+  padding: 0;
+  padding-left: 2rem;
+}
+
+/* .accordionInterno {
+  background-color: red;
+} */
+/* 
+.accordionInterno .accordionText {
+} */
+
+/* .accInterno .accordionText {
+  background-color: #56a88a !important;
+} */
 
 @media (max-width: 1100px) {
   .accordionHeader h2 {
@@ -130,6 +146,11 @@
 
   .accordionHeader h2 {
     padding: 0;
+  }
+  .accordionText ul li {
+    list-style-type: disc;
+    margin-left: 2rem;
+    color: var(--verde3);
   }
 }
 @media (max-width: 600px) {

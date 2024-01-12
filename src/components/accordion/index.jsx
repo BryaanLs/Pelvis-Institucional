@@ -2,7 +2,14 @@
 import { useState } from "react";
 import "./styles.css";
 
-const Accordion = ({ title, children, type, corBolinha }) => {
+const Accordion = ({
+  title,
+  children,
+  type,
+  corBolinha,
+  addClass,
+  bolinha,
+}) => {
   const [openAccordion, setOpenAccordion] = useState(false);
 
   const handleAccordionClick = () => {
@@ -10,9 +17,11 @@ const Accordion = ({ title, children, type, corBolinha }) => {
   };
 
   return (
-    <div className={`bolinha ${corBolinha ? corBolinha : null}`}>
+    <div
+      className={`bolinha verde ${bolinha} ${corBolinha ? corBolinha : null}`}
+    >
       <div
-        className={`accordion 
+        className={`accordion ${addClass}
         ${openAccordion ? "open" : "closed"} 
         ${type ? type : null}`}
       >
