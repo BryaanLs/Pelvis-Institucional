@@ -1,19 +1,27 @@
+// Estilos
+import "./styles.css";
+
+//Componentes
 import Container from "../../components/container";
 import BoxAnimation from "../../components/boxAnimation";
-import "./styles.css";
+import { NavLink } from "react-router-dom";
+import CtaCard from "../../components/ctaCard";
+import EspecialidadesCard from "../../components/EspecialidadesCard";
+
+//Fotos
+import fisioPelvica from "../../assets/img/webp/especialidadeMobile1.webp";
+import acupuntura from "../../assets/img/webp/especialidadeMobile2.webp";
+import pilates from "../../assets/img/webp/especialidadeMobile3.webp";
+
+//Icones
 import prancheta from "../../assets/img/svgs/prancheta.svg";
 import pelvieBranca from "../../assets/img/svgs/logoPelvieBranca.svg";
 import pelvieCinza from "../../assets/img/svgs/logoPelvieCinza.svg";
 import whats from "../../assets/img/svgs/whatsappBranco.svg";
 import checklist from "../../assets/img/svgs/checklistIcon.svg";
 import relogio from "../../assets/img/svgs/relogio.svg";
-import { NavLink } from "react-router-dom";
 import pranchetaComSeta from "../../assets/img/svgs/pranchetaComSeta.svg";
 import check from "../../assets/img/svgs/check.svg";
-import EspecialidadesCard from "../../components/EspecialidadesCard";
-import michelle from "../../assets/img/michelle.png";
-import heart from "../../assets/img/svgs/heartIcon.svg";
-import CtaCard from "../../components/ctaCard";
 
 const ComoFunciona = () => {
   return (
@@ -21,9 +29,8 @@ const ComoFunciona = () => {
       <Container sectionClass="bgHeroTratamento" />
       <Container mainClass="stepsAtendimento">
         <BoxAnimation animation="opacity">
-          <span>Agendamento</span>
           <h2>
-            As etapas do atendimento
+            Etapas do Atendimento
             <img
               src={prancheta}
               alt="icone de uma prancheta com uma pessoa"
@@ -34,26 +41,32 @@ const ComoFunciona = () => {
 
         <div className="stepsCardsBox">
           <BoxAnimation animation="left">
+            <div className="complement">
+              <span>1</span>
+            </div>
             <div className="stepsCard">
               <h3>
-                <div className="complement">
-                  <span>1</span>
-                </div>
-                Agende sua avaliação
+                Agendar avaliação
                 <img
                   src={pelvieBranca}
                   alt="logo da pelvie branca"
                   width="40"
                 />
               </h3>
-              <span>Fácil e rápido</span>
+              <span className="stepsCardDesc">Fácil e rápido</span>
               <p>
-                O primeiro passo é <strong>agendar sua avaliação</strong> para
-                que seu tratamento seja determinado da maneira mais efetiva
-                possível.
+                Nosso agendamento é feito via WhatsApp ou ligação. O horário de
+                atendimento é bem amplo: segunda a sexta das 7h às 21h e aos
+                sábado das 8h às 14h.
               </p>
-              <p>O agendamento é feito via WhatsApp ou ligação!</p>
-              <a href="#" className="linkAvaliação">
+              <p>
+                A avaliação é personalizada e consiste em uma entrevista inicial
+                e em um exame físico. Com base nisto, a fisioterapeuta elabora
+                um diagnóstico e um plano de tratamento individualizado, sendo
+                possível estimar a duração do tratamento e a frequência
+                adequada.
+              </p>
+              <a href="#" className="linkAvaliação" target="_blank">
                 Agendar avaliação
                 <img src={whats} alt="logo do whatsapp" width="20" />
               </a>
@@ -61,28 +74,32 @@ const ComoFunciona = () => {
           </BoxAnimation>
           <BoxAnimation animation="right">
             <div className="stepsCard">
+              <div className="complement">
+                <span>2</span>
+              </div>
               <h3>
-                <div className="complement">
-                  <span>2</span>
-                </div>
-                Início das sessões
+                Iniciar o tratamento
                 <img
                   src={pelvieBranca}
                   alt="logo da pelvie branca"
                   width="40"
                 />
               </h3>
-              <span>Totalmente personalizado!</span>
+              <span className="stepsCardDesc">Totalmente personalizado!</span>
               <p>
-                Após passar pela avaliação, você iniciará suas sessões, cuja
-                frequência será determinada em conjunto com a fisioterapia.
+                Desde a primeira sessão, fornecemos educação abrangente e
+                orientações diversas, incluindo mudanças no estilo de vida. O
+                progresso é avaliado rotineiramente e o plano de tratamento é
+                reajustado conforme for necessário.
               </p>
               <p>
-                A frequência pode ser semanal, duas vezes por semana ou até
-                mesmo com intervalos maiores, a depender de cada caso
+                As principais técnicas consistem em exercícios, terapias manuais
+                e o uso de determinados equipamentos e tecnologias, como o
+                biofeedback eletromiográfico, que auxiliam na obtenção dos
+                resultados.
               </p>
               <NavLink to="ComoFunciona" className="linkTratamentos">
-                Agendar avaliação
+                Tire suas dúvidas
                 <img src={checklist} alt="logo do whatsapp" width="20" />
               </NavLink>
             </div>
@@ -99,17 +116,14 @@ const ComoFunciona = () => {
                 />
               </div>
               <h3>
-                Qual é o <b>&nbsp;diferencial&nbsp;</b> da Clínica Pélvie
+                Nosso diferencial
                 <img src={pelvieCinza} alt="logo cinza da pelvie" width="30" />
               </h3>
             </div>
-            <h4>Atendimento personalizado e totalmente detalhado</h4>
             <p>
-              Ao contrário de outras clínicas, que reservam no máximo 60
-              minutos, aqui na Pélvie, nosso atendimento é marcado com
-              intervalos de 90 minutos, ou seja,
-              <b> disponibilizamos mais tempo para entender cada caso</b> e
-              explicar detalhadamente as próximas etapas do tratamento.
+              Os agendamentos são realizados a cada 90 minutos. Este tempo
+              diferenciado garante a mais alta qualidade de atendimento durante
+              sua sessão, tornando-a mais resolutiva.
             </p>
           </div>
         </BoxAnimation>
@@ -119,7 +133,7 @@ const ComoFunciona = () => {
         <div className="reembolsoBox">
           <div className="reembolsoTitle">
             <h2>
-              <b>Reembolso do plano de saúde:</b> te ajudamos com esse benefício
+              <strong>Reembolso</strong>
             </h2>
             <img
               src={pranchetaComSeta}
@@ -128,14 +142,12 @@ const ComoFunciona = () => {
             />
           </div>
           <div className="reembolsoContent">
-            <span>Fácil e rápido</span>
+            <span>Orientamos o passo a passo!</span>
             <p>
-              O primeiro passo é <strong>agendar sua avaliação</strong> para que
-              seu tratamento seja determinado da maneira mais efetiva possível.
-              O primeiro passo é <strong>agendar sua avaliação</strong> para que
-              seu tratamento seja determinado da maneira mais efetiva possível.
-              O primeiro passo é<strong>agendar sua avaliação</strong> para que
-              seu tratamento seja determinado da maneira mais efetiva possível.
+              Caso você tenha plano de saúde, pode solicitar o reembolso das
+              suas sessões de Fisioterapia Pélvica. Você precisará do
+              encaminhamento médico contendo seu diagnóstico e nós emitiremos a
+              Nota Fiscal e demais documentos necessários.
             </p>
             <ul>
               <li>
@@ -143,65 +155,84 @@ const ComoFunciona = () => {
                 percentual de aprovação
               </li>
               <li>
-                <img src={check} alt="icone de check" width="20" /> Emissão de
-                guias
+                <img src={check} alt="icone de check" width="20" />
+                Emissão de nota fiscal
               </li>
               <li>
-                <img src={check} alt="icone de check" width="20" /> Documentação
+                <img src={check} alt="icone de check" width="20" />
+                Elaboração de relatórios
               </li>
             </ul>
           </div>
         </div>
       </Container>
 
-      <Container mainClass="especialidadesMain especialidadesMainTratamento">
-        <span className="spanLabel">Uma clínica acolhedora e agradável!</span>
-        <h3>
-          Saiba mais sobre nossos tratamentos
-          <img src={heart} alt="icone de coração" width="30" />
-        </h3>
+      <Container mainClass="especialidadesMain">
+        <span className="spanLabel">Estamos preparadas para te receber</span>
+        <h3>Saiba mais sobre nossos tratamentos</h3>
         <div className="especialidades">
           <BoxAnimation animation="left">
             <EspecialidadesCard
               h3="Fisioterapia Pélvica"
               aText="Saiba Mais"
-              img={michelle}
-              altImg={"Foto da Dra. Michelle"}
-              href={"/#ourSpace"}
-              p={
-                "Ajudar a restaurar a função normal e fortalecer os músculos do assoalho pélvico.  Eles desempenham um papel fundamental no suporte dos órgãos pélvicos, controle da micção, da defecação e na função sexual."
-              }
-            />
+              img={fisioPelvica}
+              altImg={"Foto da Dra. Juliana com uma paciente"}
+              href="/Tratamento"
+            >
+              <p>
+                É uma especialidade da fisioterapia que busca tratar e prevenir
+                disfunções relacionadas ao assoalho pélvico. Indicada para o
+                tratamento de incontinência urinária, prolapsos genitais,
+                disfunções sexuais, constipação intestinal, preparação para o
+                parto e na recuperação pós-parto, como a diástase abdominal e
+                outros.
+              </p>
+            </EspecialidadesCard>
           </BoxAnimation>
           <BoxAnimation animation="top">
             <EspecialidadesCard
               h3="Acupuntura"
               aText="Saiba Mais"
-              img={michelle}
-              altImg={"Foto da Dra. Michelle"}
-              href={"#"}
-              p={
-                "Ajudar a restaurar a função normal e fortalecer os músculos do assoalho pélvico.  Eles desempenham um papel fundamental no suporte dos órgãos pélvicos, controle da micção, da defecação e na função sexual."
-              }
-            />
+              img={acupuntura}
+              altImg={"Foto mostrando o acupunturismo"}
+              href="/Tratamento"
+            >
+              <p>
+                É uma especialidade da Medicina Tradicional Chinesa que tem foco
+                no tratamento de problemas relacionados à saúde. Quando voltada
+                à saúde da mulher, busca o reequilíbrio de desarmonias em suas
+                diferentes fases da vida, como no período menstrual, na
+                menopausa, na gestação, no pré e pós-parto, entre outras.
+              </p>
+            </EspecialidadesCard>
           </BoxAnimation>
           <BoxAnimation animation="right">
             <EspecialidadesCard
               h3="Pilates"
               aText="Saiba Mais"
-              img={michelle}
-              altImg={"Foto da Dra. Michelle"}
-              href={"#"}
-              p={
-                "Ajudar a restaurar a função normal e fortalecer os músculos do assoalho pélvico.  Eles desempenham um papel fundamental no suporte dos órgãos pélvicos, controle da micção, da defecação e na função sexual."
-              }
-            />
+              img={pilates}
+              altImg={"Foto da Dra. Juliana dando aula de pilates"}
+              href="/Tratamento"
+            >
+              <p>
+                É um método de exercícios que visa trabalhar a conexão entre
+                mente e corpo. Sua prática traz benefícios como melhora da
+                flexibilidade e da mobilidade, ganho de força muscular e alívio
+                de dores. Oferecidas por fisioterapeuta especializada, as aulas
+                de Pilates são totalmente focadas em gestantes e em mulheres no
+                pós-parto.
+              </p>
+            </EspecialidadesCard>
           </BoxAnimation>
         </div>
       </Container>
-
       <Container>
-        <CtaCard p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam recusandae quaerat sit odit aliquam repellendus eius amet, modi quae itaque, vel dolores. Cumque totam, dolor ad officiis illo esse vero!" />
+        <CtaCard>
+          <p>
+            Benefícios duradouros através de mudanças positivas no estilo de
+            vida!
+          </p>
+        </CtaCard>
       </Container>
     </>
   );

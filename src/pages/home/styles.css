@@ -270,7 +270,13 @@
   .cardsGoogle .googleCard:nth-child(6) {
     margin-left: 0;
   }
-
+}
+@media (max-width: 1300px) {
+  .especialidades {
+    flex-direction: column;
+  }
+}
+@media (max-width: 1220px) {
   .ourTeamCards {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -278,13 +284,6 @@
     place-content: center;
     place-items: center;
   }
-}
-@media (max-width: 1300px) {
-  .especialidades {
-    flex-direction: column;
-  }
-}
-@media (max-width: 1100px) {
   .especialidades {
     flex-direction: column;
   }

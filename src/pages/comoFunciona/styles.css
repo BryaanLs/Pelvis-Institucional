@@ -8,7 +8,7 @@
 .stepsAtendimento {
   border: 2px solid var(--cinza5);
   border-radius: 2rem;
-  padding: 4rem 1rem;
+  padding: 4rem 4rem;
   margin-top: 3rem;
 }
 .stepsAtendimento span {
@@ -33,56 +33,95 @@
 }
 .stepsCardsBox {
   display: flex;
-  justify-content: space-between;
-  gap: 2rem;
-  width: 90%;
-  margin: 4rem auto;
+  /* display: grid; */
+  /* grid-template-columns: repeat(2, 50%); */
+  /* place-items: center; */
+  /* place-content: center; */
+  gap: 8rem;
+  /* background-color: red; */
+  margin: 4rem 0;
+  position: relative;
+}
+
+.stepsCardsBox > span {
+  /* background-color: blue; */
+  width: 100%;
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.complement {
+  width: 90px;
+  height: 90px;
+  background-color: var(--roxo4);
+  border-radius: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: -30px;
+  top: -30px;
+}
+.complement span {
+  font-family: var(--taviraj);
+  color: var(--cinza);
+  background-color: var(--branco);
+  border: 2px solid var(--roxo9);
+  font-size: 3rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .stepsCard {
-  padding: 4rem 2rem 2rem;
+  padding: 3rem;
   border: 2px solid var(--roxo4);
   border-radius: 2rem;
-  counter-increment: steps;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 500px;
-  width: 480px;
+  height: 100%;
+  width: 100%;
+  gap: 5px;
+
   box-shadow: 8px 6px 20.5px rgba(0, 0, 0, 0.15);
 }
 .stepsCard span:nth-child(2),
 .stepsCard p,
 .stepsCard a {
-  width: 80%;
   margin: 0 auto;
+  /* padding: 0 3rem; */
 }
 .stepsCard h3 {
-  background: linear-gradient(90deg, #9c59ff 6.88%, #bc8af2 81.16%);
-  border-radius: 1rem;
-  color: var(--branco);
-  font-size: 1.9rem;
-  display: flex;
-  justify-content: right;
-  align-items: center;
-  padding: 1rem 1rem;
-  margin: 0 auto;
-  width: 80%;
-  position: relative;
+  color: var(--roxo4);
+  font-size: 2.5rem;
+  width: 100%;
+  text-align: center;
 }
+
+/* excluir (excluir tag também)*/
 .stepsCard h3 img {
   margin-left: 2rem;
+  display: none;
 }
-.stepsCard span:nth-child(2) {
-  font-size: 2.2rem;
+/* --- */
+
+.stepsCard .stepsCardDesc {
+  font-size: 2rem;
   display: block;
   margin: 2rem auto;
-  text-align: left;
+  text-align: left !important;
   margin-right: auto;
+  /* background-color: red; */
 }
 .stepsCard p {
   font-size: 1.8rem;
   text-align: justify;
-  hyphens: auto;
   margin-bottom: 2rem;
 }
 .stepsCard a {
@@ -96,6 +135,7 @@
   justify-content: center;
   text-transform: uppercase;
   font-weight: bold;
+  width: 100%;
 }
 .stepsCard a img {
   margin-left: 2rem;
@@ -117,38 +157,13 @@
   transform: scale(105%);
   filter: brightness(115%);
 }
-.complement {
-  width: 90px;
-  height: 90px;
-  background-color: var(--roxo4);
-  border-radius: 10rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: -40px;
-  top: -15px;
-}
-.complement span {
-  font-family: var(--taviraj);
-  color: var(--cinza);
-  background-color: var(--branco);
-  border: 2px solid var(--roxo9);
-  font-size: 3rem;
-  width: 60px;
-  height: 60px;
-  border-radius: 20rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .diferencial {
   border: 2px solid var(--roxo4);
-  width: 90%;
+
   border-radius: 1rem;
   margin: 0 auto;
-  padding: 4rem 2rem;
+  padding: 4rem 4rem;
   position: relative;
   box-shadow: 8px 6px 20.5px rgba(0, 0, 0, 0.15);
 }
@@ -164,7 +179,6 @@
   font-size: 2.5rem;
   display: flex;
   justify-content: center;
-  width: 90%;
   margin: 0 auto;
   color: var(--roxo4);
   font-weight: 500;
@@ -176,18 +190,10 @@
   top: 15px;
 }
 
-.diferencial h4 {
-  margin: 2rem auto;
-  font-size: 2rem;
-  width: max-content;
-  font-family: var(--sourceSans);
-  color: var(--roxo4);
-  font-weight: 500;
-}
-
 .diferencial p {
+  margin-top: 3rem;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 
 .complementoRelogio {
@@ -201,7 +207,7 @@
   border-radius: 10rem;
   z-index: 1;
   top: -7px;
-  left: 4%;
+  left: -10px;
 }
 .complementoRelogio img {
   /* padding: 1rem; */
@@ -221,7 +227,7 @@
 }
 
 .reembolso {
-  border: 2px solid var(--roxo4);
+  border: 2px solid var(--cinza5);
   padding: 3rem;
 
   border-radius: 1rem;
@@ -239,7 +245,7 @@
 
 .reembolsoBox {
   padding: 2rem 4rem;
-  border: 2px solid var(--cinza5);
+  border: 2px solid var(--roxo4);
   border-radius: 1rem;
   position: relative;
 }
@@ -250,33 +256,36 @@
 }
 .reembolsoTitle h2 {
   margin: 1rem 0;
-  font-size: 2.2rem;
+  font-size: 2.5rem;
   font-weight: 500;
   color: var(--roxo4);
 }
 
 .reembolsoTitle img {
-  margin-left: 2rem;
+  margin-left: 1rem;
+  transform: scale(80%);
 }
 
 .reembolsoContent span {
   color: var(--roxo4);
-  margin: 2rem 0;
+  margin-bottom: 2rem;
   font-family: var(--sourceSans);
   font-size: 1.7rem;
   display: block;
+  text-align: center;
 }
 
 .reembolsoContent p {
   margin-bottom: 2rem;
   text-align: justify;
-  hyphens: auto;
+  font-size: 1.6rem;
+  /* hyphens: auto; */
 }
 
 .reembolsoContent ul {
   display: flex;
   gap: 4rem;
-  justify-content: left;
+  justify-content: center;
 }
 
 .reembolsoContent ul li img {
@@ -323,8 +332,9 @@
   .reembolsoTitle h2 {
     font-size: 1.7rem;
     padding: 1rem;
-    border-top: 2px solid var(--roxo4);
-    border-bottom: 2px solid var(--roxo4);
+    border: 2px solid var(--cinza5);
+    text-align: center;
+    border-radius: 1rem;
   }
   .reembolsoBox::after {
     left: -90px;
@@ -343,6 +353,10 @@
   }
   .reembolsoContent ul li {
     border-bottom: 1px solid var(--roxo4);
+    padding: 2rem 0;
+  }
+
+  .reembolsoBox {
     padding: 2rem 0;
   }
 }
@@ -377,17 +391,16 @@
   }
 
   .complement {
-    width: 60px;
-    height: 60px;
-    left: -45px;
-    top: -10px;
+    transform: scale(70%);
+    left: -30px;
+    top: -30px;
   }
 
-  .complement span {
+  /* .complement span {
     width: 40px;
     height: 40px;
     font-size: 1.9rem;
-  }
+  } */
 
   .stepsCardsBox {
     gap: 5rem;
@@ -397,13 +410,18 @@
 
   .stepsCard {
     justify-content: space-evenly;
+    gap: 2rem;
   }
 
   .stepsCard h3 {
-    font-size: 1.5rem;
-    width: 80%;
+    font-size: 2.5rem;
+    /* width: 80%; */
     padding: 0;
     place-content: center;
+  }
+
+  .stepsCardDesc {
+    font-size: 1.6rem !important;
   }
 
   .stepsCard h3 img {
@@ -467,29 +485,36 @@
   }
 }
 @media (max-width: 430px) {
-  .stepsCard {
-    padding: 0;
-    box-shadow: none;
-    border-bottom: 1px solid var(--roxo4);
-    border-radius: 0;
-    padding-bottom: 3rem;
-  }
-
   .stepsAtendimento h2 {
     font-size: 2rem;
     width: 100%;
   }
 
+  .stepsCard {
+    gap: 1rem;
+  }
+
   .stepsCard h3 {
-    width: 100%;
+    font-size: 2rem;
   }
 
   .complement {
-    left: -17px;
-    top: -10px;
+    transform: scale(80%);
+    /* top: -80px; */
+    left: -20px;
   }
 
-  .stepsCard h3 img {
+  .complementoRelogio {
+    transform: scale(90%);
+    left: -40px;
+  }
+
+  .reembolsoBox::after {
+    transform: scale(50%);
+    left: -85px;
+  }
+
+  .compl .stepsCard h3 img {
     margin-left: 1rem;
   }
 }
