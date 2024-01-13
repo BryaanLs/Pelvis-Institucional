@@ -1,0 +1,160 @@
+.fakeBg {
+  background-color: var(--roxo7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 108px;
+}
+
+.bgNotFound {
+  background: url(../../assets/img/webp/bgCurriculum.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.notFoundContent {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 100vh;
+  padding: 1rem;
+  place-items: center;
+  gap: 4rem;
+}
+
+.notFoundMessage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.notFoundMessage .spanLabel {
+  color: var(--cinza2);
+  font-family: var(--taviraj);
+  font-size: 1.8rem;
+  margin-bottom: 2rem;
+}
+
+.notFoundMessage h2 {
+  color: var(--roxo4);
+  line-height: 1;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+}
+
+.returnNotFound {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.returnNotFound p {
+  height: 100%;
+  padding: 0;
+  line-height: 2;
+  color: var(--roxo6);
+  font-weight: bold;
+  font-style: italic;
+}
+
+.notFoundMessage a {
+  padding: 1rem 4rem;
+  width: max-content;
+  text-align: center;
+}
+
+.notFoundMessage .ctaBtn2 {
+  background-color: transparent;
+  color: var(--roxo6);
+}
+
+.notFoundMessage .ctaBtn2:hover {
+  background-color: var(--roxo4);
+  color: var(--branco);
+}
+
+.notFoundMessage p {
+  font-size: 2rem;
+}
+
+.notFoundJson {
+  width: fit-content;
+  padding-left: 2rem;
+  justify-content: right;
+  align-items: center;
+  height: max-content;
+}
+
+.notFoundJson svg {
+  display: flex;
+}
+
+@media (max-width: 1180px) {
+  .notFoundContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    /* gap: 0; */
+    min-height: unset;
+    padding-top: 108px;
+  }
+
+  .notFoundMessage {
+    width: min-content;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .notFoundMessage .spanLabel {
+    margin: 0 auto 2rem;
+  }
+
+  .notFoundJson {
+    width: 100%;
+  }
+
+  .notFoundJson svg {
+    width: max-content;
+    height: max-content;
+  }
+  .returnNotFound {
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .fakeBg {
+    display: none;
+  }
+
+  .notFoundContent {
+    padding-top: 70px;
+  }
+}
+@media (max-width: 600px) {
+  .notFoundMessage {
+    width: 100%;
+  }
+
+  .returnNotFound {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .returnNotFound a {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .notFoundMessage h2 {
+    font-size: 3.6rem;
+  }
+  .notFoundMessage > p {
+    font-size: 1.8rem;
+  }
+}

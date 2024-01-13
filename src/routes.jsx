@@ -5,6 +5,7 @@ import Home from "./pages/home";
 import Tratamento from "./pages/tratamento";
 import ComoFunciona from "./pages/comoFunciona";
 import QuemSomos from "./pages/quemSomos";
+import NotFound from "./pages/notFound";
 
 const AppRoutes = () => {
   return (
@@ -13,7 +14,7 @@ const AppRoutes = () => {
       <Route path="/QuemSomos" element={<QuemSomos />} />
       <Route path="/Tratamento" element={<Tratamento />} />
       <Route path="/ComoFunciona" element={<ComoFunciona />} />
-      <Route path="*" element={<Home />} />
+      <Route path="*" element={<NotFound />} />
     </Routes>
   );
 };

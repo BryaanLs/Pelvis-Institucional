@@ -110,25 +110,7 @@ button:hover {
   height: max-content;
   min-width: 100%;
 }
-.titleCubeL {
-  font-weight: 500;
-  position: relative;
-  color: var(--cinza2);
-  text-align: center;
-}
-.titleCubeL::after {
-  content: "";
-  border-radius: 1.25rem 0rem;
-  background: #bcddba;
-  box-shadow: 10px 5px 4px 0px rgba(187, 187, 187, 0.15);
-  width: 30px;
-  height: 30px;
-  border-top-left-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-  position: absolute;
-  left: -30px;
-  top: 0;
-}
+
 .cta {
   padding: 2rem 3rem;
   background-color: var(--roxo1);
