@@ -85,7 +85,7 @@ const QuemSomos = () => {
                   Nosso trabalho vai além do momento presente, pois valorizamos
                   orientações, mudanças de comportamento e hábitos saudáveis que
                   proporcionam benefícios a longo prazo.
-                  <strong>PREVENÇÃO</strong> é uma prioridade e queremos que
+                  <strong> PREVENÇÃO</strong> é uma prioridade e queremos que
                   nossos pacientes levem o conhecimento fisioterapêutico
                   adquirido para toda a vida.
                 </p>
@@ -118,7 +118,7 @@ const QuemSomos = () => {
                 <p>
                   Sabendo dos benefícios da fisioterapia pélvica para a saúde da
                   população, nosso objetivo a médio-longo prazo é causar um
-                  <strong>IMPACTO SOCIAL</strong> significativo, levando esse
+                  <strong> IMPACTO SOCIAL</strong> significativo, levando esse
                   cuidado a um número cada vez maior de pessoas, especialmente
                   aquelas que mais necessitam.
                 </p>
@@ -133,7 +133,7 @@ const QuemSomos = () => {
               p={
                 <p>
                   Apesar do trabalho intenso, buscamos sempre momentos para
-                  <strong>CELEBRAÇÃO</strong>. Acreditamos que as risadas,
+                  <strong> CELEBRAÇÃO</strong>. Acreditamos que as risadas,
                   descontração e leveza são essenciais para renovar nossas
                   energias e continuar oferecendo o melhor atendimento a todos
                   os nossos pacientes.

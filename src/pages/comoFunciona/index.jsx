@@ -16,7 +16,7 @@ import pilates from "../../assets/img/webp/especialidadeMobile3.webp";
 //Icones
 import prancheta from "../../assets/img/svgs/prancheta.svg";
 import pelvieBranca from "../../assets/img/svgs/logoPelvieBranca.svg";
-import pelvieCinza from "../../assets/img/svgs/logoPelvieCinza.svg";
+import pelvieCinza from "../../assets/img/svgs/logoPelvieRoxo.svg";
 import whats from "../../assets/img/svgs/whatsappBranco.svg";
 import checklist from "../../assets/img/svgs/checklistIcon.svg";
 import relogio from "../../assets/img/svgs/relogio.svg";
@@ -163,6 +163,9 @@ const ComoFunciona = () => {
                 Elaboração de relatórios
               </li>
             </ul>
+            <a href="#" target="_blank" className="ctaBtn2">
+              Solicitar orçamento
+            </a>
           </div>
         </div>
       </Container>

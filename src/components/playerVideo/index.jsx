@@ -2,9 +2,10 @@
 import { useState, useRef, useEffect } from "react";
 import "./styles.css";
 import videoSource from "../../assets/video/videoPelvie.mp4";
+import thumb from "../../assets/img/webp/thumbVideo.webp";
 
 const PlayerVideo = () => {
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const videoRef = useRef(null);
   const [progress, setProgress] = useState(0);
 
@@ -33,7 +34,7 @@ const PlayerVideo = () => {
   };
 
   useEffect(() => {
-    if (progress >= 98) {
+    if (progress >= 100) {
       setProgress(0);
       setIsPlaying(false);
     }
@@ -51,7 +52,7 @@ const PlayerVideo = () => {
 
   return (
     <div className="custom-video-player">
-      <video id="myVideo" ref={videoRef} autoPlay playsInline>
+      <video id="myVideo" ref={videoRef} poster={thumb} playsInline>
         <source src={videoSource} type="video/mp4" />
         Seu navegador não suporta o elemento de vídeo.
       </video>

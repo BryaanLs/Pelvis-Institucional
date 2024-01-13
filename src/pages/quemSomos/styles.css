@@ -1,5 +1,5 @@
 .bgHeroQuemSomos {
-  background: url(../../assets/img/bgTesteQuemSomos.png);
+  background: url(../../assets/img/webp/bgQuemSomos.webp);
   min-height: 110vh;
   padding-top: 70px;
   display: flex;
@@ -71,7 +71,7 @@
 }
 
 .ourValues h2 {
-  color: var(--roxo4);
+  color: var(--verde3);
   margin: 4rem 0;
 }
 
@@ -81,19 +81,53 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
+  gap: 5rem;
 }
 
 .ourValuesCards .card {
   border: none;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     120deg,
     rgba(241, 241, 241, 0.9) -0.02%,
     rgba(255, 255, 255, 0.9) 55.19%,
     rgba(246, 246, 246, 0.9) 99.98%
-  );
-  box-shadow: 0 0 5px var(--roxo4);
+  ); */
+  box-shadow: 0 0 3px var(--verde3);
   transition: 0.3s ease-in-out, cursor 0.4s ease-in-out;
+}
+
+.ourValuesCards .card h3 {
+  color: var(--verde3);
+}
+
+.ourValuesCards span .bigCard {
+  justify-content: start !important;
+  gap: 3rem;
+  height: 400px;
+}
+
+.bigCard h2 {
+  color: var(--branco) !important;
+  background: linear-gradient(120deg, #bee596 0%, #56a88a 50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: unset;
+  padding: 1rem 2rem !important;
+  border-radius: 4rem;
+  width: 100%;
+  font-size: 1.9rem !important;
+}
+
+.bigCard h2::after {
+  display: none;
+}
+
+.bigCard img {
+  display: none;
+}
+.bigCard p {
+  color: var(--cinza);
 }
 
 .ourValuesCards .card:hover {
@@ -103,7 +137,7 @@
 
 .bgTeam {
   margin: 4rem 0;
-  background: url(../../assets/img/teamPic.png);
+  background: url(../../assets/img/webp/teamPic.webp);
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -140,7 +174,7 @@
 }
 
 .bgCurriculum {
-  background-image: url(../../assets/img/bgCurriculum.png);
+  background-image: url(../../assets/img/webp/bgCurriculum.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -191,7 +225,7 @@
 @media (max-width: 800px) {
   .bgTeam {
     margin: 4rem 0;
-    background: url(../../assets/img/teamPicMobile.png);
+    background: url(../../assets/img/webp/teamPicMobile.webp);
     background-position: center center;
     background-size: cover;
   }
@@ -205,12 +239,22 @@
 
   .heroCard p {
     text-align: justify;
-    /* overflow-wrap: break-word; */
+
     hyphens: auto;
   }
 
   .professionalDescription h2 {
     font-size: 2.2rem;
     margin: 1rem 0;
+  }
+
+  .bgCurriculumNoPic,
+  .bgCurriculum {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text a {
+    padding: 1rem 0 !important;
   }
 }
