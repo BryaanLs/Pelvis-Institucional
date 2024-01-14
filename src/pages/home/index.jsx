@@ -134,9 +134,8 @@ const Home = () => {
                 É uma especialidade da Medicina Tradicional Chinesa que tem foco
                 no tratamento de problemas relacionados à saúde. Quando voltada
                 à saúde da mulher, busca o reequilíbrio de desarmonias em suas
-                diferentes fases da vida, como no período menstrual, <b>na </b>
-                menopausa, <b>na</b> gestação, <b>no</b> pré e pós-parto, entre
-                outras.
+                diferentes fases da vida, como no período menstrual, na
+                menopausa, na gestação, no pré e pós-parto, entre outras.
               </p>
             </EspecialidadesCard>
           </BoxAnimation>
@@ -303,7 +302,7 @@ const Home = () => {
               href="https://www.google.com/maps?ll=-23.613567,-46.69575&z=16&t=m&hl=pt-BR&gl=BR&mapclient=embed&cid=17403131375481056319"
               target="_blank"
             >
-              Rua James Watt 142, sala 42 – Brooklin - SP
+              Rua James Watt 142, sala 42 – Brooklin - São Paulo - SP
             </a>
           </div>
           <div className="phoneMaps">

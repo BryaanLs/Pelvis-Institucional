@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-// import React from 'react'
+
 import "./styles.css";
 import BoxAnimation from "../boxAnimation";
 const Curriculum = ({ img, altImg, a, aUrl, addClass, children }) => {
@@ -20,9 +20,11 @@ const Curriculum = ({ img, altImg, a, aUrl, addClass, children }) => {
           </div>
         </BoxAnimation>
         <div className="text">
-          <BoxAnimation animation="right">{children}</BoxAnimation>
-          <BoxAnimation animation="top" addClass="animationLink">
-            <a href={aUrl}>{a}</a>
+          <BoxAnimation addClass="textContent" animation="right">
+            {children}
+            <BoxAnimation animation="top" addClass="animationLink">
+              <a href={aUrl}>{a}</a>
+            </BoxAnimation>
           </BoxAnimation>
         </div>
       </div>

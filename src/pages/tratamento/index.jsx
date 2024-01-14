@@ -7,7 +7,6 @@ import "./styles.css";
 import Container from "../../components/container";
 import Accordion from "../../components/accordion";
 import BoxAnimation from "../../components/boxAnimation";
-// import { NavLink } from "react-router-dom";
 import CtaCard from "../../components/ctaCard";
 
 //Fotos
@@ -18,7 +17,6 @@ import cibele from "../../assets/img/webp/cibele.webp";
 
 //Icons
 import whatsappGreen from "../../assets/img/svgs/wppGreen.svg";
-// import groupIco from "../../assets/img/svgs/groupIco.svg";
 import CtaAcc from "../../components/ctaAcc";
 import SpecCard from "../../components/specCard";
 import { NavLink } from "react-router-dom";
@@ -213,10 +211,10 @@ const Tratamento = () => {
               <Accordion
                 addClass="accordionInterno"
                 bolinha="noBall"
-                title="Incontinências Pós-Prostatectomia"
+                title="Incontinência Pós-Prostatectomia"
               >
                 <p>
-                  Homens que passam por procedimentos cirúrgicos envolvendo a
+                  Pessoas que passam por procedimentos cirúrgicos envolvendo a
                   retirada da próstata (por exemplo, no tratamento do câncer de
                   próstata ou hiperplasia prostática benigna), podem apresentar
                   sintomas após o procedimento, como é o caso da perda

@@ -179,6 +179,7 @@
   background-position: center center;
   background-repeat: no-repeat;
 }
+
 @media (max-width: 1600px) {
   .bgHeroQuemSomos {
     min-height: 100vh;
@@ -214,14 +215,12 @@
     padding-top: 0;
   }
 }
-
 @media (max-width: 1100px) {
   .bgCurriculumNoPic,
   .bgCurriculum {
     min-height: max-content;
   }
 }
-
 @media (max-width: 800px) {
   .bgTeam {
     margin: 4rem 0;

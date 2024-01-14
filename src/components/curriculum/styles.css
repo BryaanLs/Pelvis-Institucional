@@ -1,5 +1,4 @@
 .curriculum {
-  padding: 3rem 1rem;
   margin: 3rem 0;
 }
 
@@ -8,8 +7,8 @@
   display: flex;
   justify-content: space-between;
   gap: 8rem;
-  height: 100%;
 }
+
 .picture {
   overflow: hidden;
   border-radius: 10px;
@@ -41,15 +40,6 @@
   margin: 0 auto;
 }
 
-.text {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 50%;
-  height: 100%;
-}
-
 .text p {
   text-align: justify;
   hyphens: auto;
@@ -64,14 +54,25 @@
   border-radius: 4rem;
   color: var(--branco);
   font-weight: bold;
-  margin-top: 20rem;
+  display: block;
 }
 
-.animationLink:hover,
-.text a:hover {
+.animationLink:hover {
   -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
   animation: pulsate-bck 1s ease-in-out infinite both;
   transition: 0.2s ease-in-out;
+}
+
+.text a:hover {
+  background-color: var(--roxo3);
+  box-shadow: 0 0 2px var(--roxo1);
+}
+
+.text .textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
 
 .reverse {
@@ -87,10 +88,6 @@
   background-color: var(--branco);
   color: var(--roxo4);
   box-shadow: 0 0 2px var(--roxo4);
-}
-.text a:hover {
-  background-color: var(--roxo3);
-  box-shadow: 0 0 2px var(--roxo1);
 }
 
 .animationLink {
@@ -119,7 +116,11 @@
   font-family: var(--sourceSans);
   font-weight: bold;
   font-style: italic;
-  margin-bottom: 3rem;
+}
+
+.descriptionCV .crefito {
+  font-weight: bold;
+  margin: 1rem 0 2rem;
 }
 
 .descriptionCV ul {
@@ -128,24 +129,6 @@
 .descriptionCV ul li {
   list-style-type: disc;
   margin: 1rem 0;
-}
-
-.descriptionCV span:nth-child(4) {
-  display: block;
-  font-family: var(--sourceSans);
-  margin-top: 1rem;
-  font-weight: bold;
-  width: 100%;
-  padding: 2rem 0;
-  text-align: start;
-}
-
-.reverse .descriptionCV span:nth-child(4) {
-  margin-left: auto;
-  margin-top: auto;
-  width: 100%;
-  padding: 2rem 0;
-  text-align: end;
 }
 
 @media (max-width: 1090px) {
@@ -191,6 +174,10 @@
 
   .descriptionCV span:nth-child(2) {
     text-align: center;
+  }
+
+  .descriptionCV .crefito {
+    margin: 1rem auto 2rem;
   }
 }
 

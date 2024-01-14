@@ -183,6 +183,8 @@
   color: var(--roxo4);
   font-weight: 500;
   position: relative;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 .diferencial h3 img {
   position: absolute;
@@ -193,7 +195,7 @@
 .diferencial p {
   margin-top: 3rem;
   text-align: center;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
 }
 
 .complementoRelogio {
@@ -221,7 +223,6 @@
   background-color: var(--branco);
   content: "";
   border: 3px solid var(--roxo9);
-
   z-index: -1;
   border-radius: 10rem;
 }
@@ -278,7 +279,7 @@
 .reembolsoContent p {
   margin-bottom: 2rem;
   text-align: justify;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   /* hyphens: auto; */
 }
 

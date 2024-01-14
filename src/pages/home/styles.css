@@ -261,15 +261,6 @@
   }
 }
 @media (max-width: 1350px) {
-  .cardsGoogle {
-    grid-template-columns: repeat(2, 380px);
-    justify-content: center;
-  }
-  .cardsGoogle .googleCard:nth-child(4),
-  .cardsGoogle .googleCard:nth-child(5),
-  .cardsGoogle .googleCard:nth-child(6) {
-    margin-left: 0;
-  }
 }
 @media (max-width: 1300px) {
   .especialidades {
@@ -283,6 +274,11 @@
     gap: 10rem;
     place-content: center;
     place-items: center;
+  }
+
+  .cardsGoogle {
+    grid-template-columns: repeat(2, 380px);
+    justify-content: center;
   }
   .especialidades {
     flex-direction: column;

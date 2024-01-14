@@ -50,7 +50,7 @@ const QuemSomos = () => {
             <h2>Nossa Visão </h2>
             <p>
               Oferecer uma experiência tão <b>EXCEPCIONAL</b> a ponto que
-              <b> sejamos sempre a PRIMEIRA ESCOLHA</b> para quem busca
+              sejamos sempre a <b>PRIMEIRA ESCOLHA</b> para quem busca
               Fisioterapia Pélvica na grande São Paulo.
             </p>
           </div>
@@ -165,6 +165,7 @@ const QuemSomos = () => {
               Fisioterapeuta especializada em Saúde da Mulher e Instrutora do
               Método Pilates
             </span>
+            <span className="crefito">CREFITO-3/226407-F</span>
             <ul>
               <li>
                 Graduada em Fisioterapia pela Universidade Presbiteriana
@@ -184,8 +185,6 @@ const QuemSomos = () => {
                 Sócia e fundadora da PELVIE - Fisioterapia Pélvica Funcional.
               </li>
             </ul>
-
-            <span>CREFITO-3/226407-F</span>
           </div>
         </Curriculum>
       </Container>
@@ -204,6 +203,7 @@ const QuemSomos = () => {
               Fisioterapeuta especializada em Saúde da Mulher, Doula e Educadora
               Perinatal
             </span>
+            <span className="crefito">CREFITO-3 221316-F</span>
             <ul>
               <li>
                 Graduada em Fisioterapia pela Universidade de Brasília (UnB);
@@ -225,7 +225,6 @@ const QuemSomos = () => {
                 Sócia e fundadora da PELVIE - Fisioterapia Pélvica Funcional.
               </li>
             </ul>
-            <span>CREFITO-3 221316-F</span>
           </div>
         </Curriculum>
       </Container>
@@ -243,6 +242,7 @@ const QuemSomos = () => {
               Fisioterapeuta especializada em Saúde da Mulher e Mestre em
               Ginecologia e Obstetrícia
             </span>
+            <span className="crefito">CREFITO-3 296198-F</span>
             <ul>
               <li>
                 Graduada em Fisioterapia pela Faculdade de Medicina de Ribeirão
@@ -265,8 +265,6 @@ const QuemSomos = () => {
               <li>Fez curso de formação em Ginecologia e Obstetrícia;</li>
               <li>Formação em Pilates.</li>
             </ul>
-
-            <span>CREFITO-3 296198-F</span>
           </div>
         </Curriculum>
       </Container>
@@ -285,6 +283,7 @@ const QuemSomos = () => {
               Fisioterapeuta Acupunturista especializada em Saúde da Mulher e
               Gestantes
             </span>
+            <span className="crefito">CREFITO-3 111858-F</span>
             <ul>
               <li>
                 Graduada em Fisioterapia pelo Centro Universitário São Camilo;
@@ -305,8 +304,6 @@ const QuemSomos = () => {
                 fitoacupuntura.
               </li>
             </ul>
-
-            <span>CREFITO-3 111858-F</span>
           </div>
         </Curriculum>
       </Container>
