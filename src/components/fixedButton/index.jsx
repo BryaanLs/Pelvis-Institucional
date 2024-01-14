@@ -1,11 +1,15 @@
 import "./styles.css";
-import Lottie from "lottie-react";
+import { lazy, Suspense } from "react";
+const Lottie = lazy(() => import("lottie-react"));
+import Loader from "../loader";
 import animationData from "../../lottie/whatsapp.json";
 
 const FixedButton = () => {
   return (
     <a className="whatsBtn" href="#">
-      <Lottie animationData={animationData} />
+      <Suspense fallback={<Loader />}>
+        <Lottie animationData={animationData} />
+      </Suspense>
     </a>
   );
 };

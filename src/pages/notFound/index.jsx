@@ -1,9 +1,21 @@
-import Lottie from "lottie-react";
-import animationData from "../../lottie/notFound.json";
+//* Imports
+
+//Estilos
 import "./styles.css";
-import Container from "../../components/container";
+
+//Componentes
 import { NavLink } from "react-router-dom";
+import { lazy, Suspense } from "react";
+const Lottie = lazy(() => import("lottie-react"));
+import Loader from "../../components/loader";
+import Container from "../../components/container";
+
+// JSON
+import animationData from "../../lottie/notFound.json";
+
+//Icons
 import whats from "../../assets/img/svgs/whatsappBranco.svg";
+
 const NotFound = () => {
   return (
     <>
@@ -31,7 +43,9 @@ const NotFound = () => {
             </a>
           </div>
         </div>
-        <Lottie animationData={animationData} className="notFoundJson" />
+        <Suspense fallback={<Loader />}>
+          <Lottie animationData={animationData} className="notFoundJson" />
+        </Suspense>
       </Container>
     </>
   );

@@ -1,9 +1,9 @@
 .bgHeroComoFunciona {
   background-image: url(../../assets/img/bgHeroTratamento.png);
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 70vh;
 }
 
 .acc {
@@ -53,6 +53,10 @@
   }
   .acc span.boxAnimation {
     width: 100%;
+  }
+
+  .bgHeroComoFunciona {
+    background-image: url(../../assets/img/bgHeroTratamentoMobile.png);
   }
 }
 
