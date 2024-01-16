@@ -168,9 +168,15 @@
 
 .bgCurriculumNoPic,
 .bgCurriculum {
-  min-height: 80vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  padding: 3rem 1rem;
+}
+
+body {
+  scroll-snap-type: y mandatory !important;
+  scroll-snap-stop: y Mandatory !important;
 }
 
 .bgCurriculum {

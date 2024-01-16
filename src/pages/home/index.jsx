@@ -59,7 +59,10 @@ const Home = () => {
           <BoxAnimation animation="top">
             <div className="titleCardsHomeCtas">
               <NavLink to="/tratamento">Tratamentos</NavLink>
-              <a href="#" target="_blank">
+              <a
+                href="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar minha avaliação. Estou buscando a clínica porque…"
+                target="_blank"
+              >
                 Agendar sua avaliação
               </a>
             </div>
@@ -104,7 +107,7 @@ const Home = () => {
         <span className="spanLabel">Cuidado completo</span>
         <h3>Conheça nossas especialidades</h3>
         <div className="especialidades">
-          <BoxAnimation animation="left">
+          <BoxAnimation animation="left" addClass="specCardsAnimate">
             <EspecialidadesCard
               h3="Fisioterapia Pélvica"
               aText="Saiba Mais"
@@ -170,6 +173,7 @@ const Home = () => {
               img={juliana}
               p="Fisioterapeuta especializada em Saúde da Mulher e Instrutora do Método Pilates"
               span="CREFITO-3/226407-F"
+              id="DraJuliana"
             />
           </BoxAnimation>
           <BoxAnimation animation="bottom">
@@ -178,6 +182,7 @@ const Home = () => {
               img={michele}
               p="Fisioterapeuta especializada em Saúde da Mulher, Doula e Educadora Perinatal"
               span="CREFITO-3/221316-F"
+              id="DraMichelle"
             />
           </BoxAnimation>
           <BoxAnimation animation="top">
@@ -186,6 +191,7 @@ const Home = () => {
               img={thais}
               p="Fisioterapeuta especializada em Saúde da Mulher e Mestre em Ginecologia e Obstetrícia"
               span="CREFITO-3/296198-F"
+              id="DraThays"
             />
           </BoxAnimation>
           <BoxAnimation animation="bottom">
@@ -194,6 +200,7 @@ const Home = () => {
               img={cibele}
               p="Fisioterapeuta Acupunturista especializada em Saúde da Mulher e Gestantes"
               span="CREFITO-3/111858-F"
+              id="DraCibele"
             />
           </BoxAnimation>
         </div>
@@ -212,7 +219,11 @@ const Home = () => {
               </NavLink>
             </BoxAnimation>
             <BoxAnimation animation="right">
-              <a href="#" className="ctaBtnZap">
+              <a
+                href="https://wa.me/+5511913112992?text=Olá! Gostaria de reservar um horário para avaliação. Estou buscando a clínica porque…"
+                className="ctaBtnZap"
+                target="_blank"
+              >
                 Reservar um horário
                 <img
                   src={whats}
@@ -307,11 +318,17 @@ const Home = () => {
           </div>
           <div className="phoneMaps">
             <h3>Telefone</h3>
-            <a href="tel:+5511913112992">(11) 91311-2992</a>
+            <a href="tel:+5511913112992" target="_blank">
+              (11) 91311-2992
+            </a>
           </div>
         </div>
 
-        <CtaCard animationBtnUm="right" animationBtnDois="left">
+        <CtaCard
+          animationBtnUm="right"
+          animationBtnDois="left"
+          url="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar um horário para avaliação. Estou buscando a clínica porque…"
+        >
           <p>
             Acolhimento, empatia e segurança:
             <br /> aqui os pacientes se sentem em casa!

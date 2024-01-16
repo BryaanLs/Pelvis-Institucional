@@ -1,5 +1,5 @@
-.bgHeroComoFunciona {
-  background-image: url(../../assets/img/bgHeroTratamento.png);
+.bgHeroTratamentos {
+  background-image: url(../../assets/img/webp/bgTratamentosDesktop.webp);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
@@ -55,8 +55,8 @@
     width: 100%;
   }
 
-  .bgHeroComoFunciona {
-    background-image: url(../../assets/img/bgHeroTratamentoMobile.png);
+  .bgHeroTratamentos {
+    background-image: url(../../assets/img/webp/bgHeroTratamentoMobile.webp);
   }
 }
 

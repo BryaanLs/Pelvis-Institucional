@@ -1,5 +1,4 @@
-import React from "react";
-
+/* eslint-disable react/prop-types */
 const Container = ({ children, sectionClass, mainClass, ...props }) => {
   return (
     <section className={`container ${sectionClass}`} {...props}>

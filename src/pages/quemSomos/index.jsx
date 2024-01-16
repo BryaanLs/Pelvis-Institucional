@@ -152,10 +152,10 @@ const QuemSomos = () => {
         <h2>Conheça a nossa equipe</h2>
       </Container>
 
-      <Container sectionClass="bgCurriculumNoPic">
+      <Container sectionClass="bgCurriculumNoPic" id="DraJuliana">
         <Curriculum
           a="Agendar avaliação com a Dra. Juliana"
-          aUrl="#"
+          aUrl="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar uma avaliação com a Dra. Juliana. Estou buscando a clínica porque…"
           altImg="Foto da Dra. Juliana"
           img={juliana}
         >
@@ -189,10 +189,10 @@ const QuemSomos = () => {
         </Curriculum>
       </Container>
 
-      <Container sectionClass="bgCurriculum">
+      <Container sectionClass="bgCurriculum" id="DraMichelle">
         <Curriculum
           a="Agendar avaliação com a Dra. Michelle"
-          aUrl="#"
+          aUrl="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar uma avaliação com a Dra. Michelle. Estou buscando a clínica porque…"
           altImg="Foto da Dra.Michelle"
           img={michelle}
           addClass="reverse"
@@ -229,10 +229,10 @@ const QuemSomos = () => {
         </Curriculum>
       </Container>
 
-      <Container sectionClass="bgCurriculumNoPic">
+      <Container sectionClass="bgCurriculumNoPic" id="DraThays">
         <Curriculum
           a="Agendar avaliação com a Dra. Thays"
-          aUrl="#"
+          aUrl="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar uma avaliação com a Dra. Thays. Estou buscando a clínica porque…"
           altImg="Foto da Dra.Thays"
           img={thais}
         >
@@ -269,10 +269,10 @@ const QuemSomos = () => {
         </Curriculum>
       </Container>
 
-      <Container sectionClass="bgCurriculum">
+      <Container sectionClass="bgCurriculum" id="DraCibele">
         <Curriculum
           a="Agendar avaliação com a Dra. Cibele"
-          aUrl="#"
+          aUrl="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar uma avaliação com a Dra. Cibele. Estou buscando a clínica porque…"
           altImg="Foto da Dra.Cibele"
           img={cibele}
           addClass="reverse"
@@ -309,7 +309,10 @@ const QuemSomos = () => {
       </Container>
 
       <Container>
-        <CtaCard googleBtn={true}>
+        <CtaCard
+          googleBtn={true}
+          url="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar um horário para avaliação. Estou buscando a clínica porque…"
+        >
           <p>
             Profissionais qualificadas para te oferecer
             <br /> um cuidado completo e atualizado.

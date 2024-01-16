@@ -2,8 +2,9 @@
 import "./styles.css";
 import arrow from "../../assets/img/svgs/whiteArrow.svg";
 import { useState } from "react";
+import { NavLink } from "react-router-dom";
 
-const SpecCard = ({ h3, p, img, span }) => {
+const SpecCard = ({ h3, p, img, span, id }) => {
   const [openCard, setOpenCard] = useState(false);
 
   function handleClick() {
@@ -30,12 +31,14 @@ const SpecCard = ({ h3, p, img, span }) => {
             className="descriptionCard"
             style={{ bottom: openCard ? "0px" : "-50%" }}
           >
-            <h3>
-              <span>Dra.</span>
-              {h3}
-            </h3>
-            <p>{p}</p>
-            <span>{span}</span>
+            <NavLink to={`/QuemSomos#${id}`}>
+              <h3>
+                <span>Dra.</span>
+                {h3}
+              </h3>
+              <p>{p}</p>
+              <span>{span}</span>
+            </NavLink>
           </div>
           <button
             onClick={handleClick}

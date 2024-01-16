@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-no-target-blank */
 /* eslint-disable react/prop-types */
 import "./styles.css";
 import { NavLink } from "react-router-dom";
@@ -61,22 +62,34 @@ const Menu = ({ openMenu, setOpenMenu }) => {
         </nav>
 
         <div className="contato">
-          <a href="#">
+          <a
+            href="https://www.instagram.com/pelviefisioterapia/?igsh=cTg1d3NxejRnbTNs"
+            target="_blank"
+          >
             <img src={insta} alt="logo do instagram" width="43" height="42" />
           </a>
-          <a href="#">
+          <a
+            href="https://wa.me/+5511913112992?text=Olá! Gostaria de mais informações. Estou buscando a clínica porque…"
+            target="_blank"
+          >
             <img src={whats} alt="logo do whatsapp" width="43" height="42" />
           </a>
         </div>
         {openMenu && (
           <div className="footerMenuMobile">
             <div className="buttonsFooterMenu">
-              <a href="#">
+              <a
+                href="https://wa.me/+5511913112992?text=Olá! Gostaria de mais informações. Estou buscando a clínica porque…"
+                target="_blank"
+              >
                 Fale Conosco
                 <img src={setaBtn} width="20" alt="seta com fundo branco" />
               </a>
-              <a href="/#ourSpace">
-                Nossa Clínica
+              <a
+                href="https://www.instagram.com/pelviefisioterapia/?igsh=cTg1d3NxejRnbTNs"
+                target="_blank"
+              >
+                Nosso instagram
                 <img src={setaBtn} width="20" alt="seta com fundo branco" />
               </a>
             </div>

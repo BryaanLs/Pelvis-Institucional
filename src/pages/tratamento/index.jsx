@@ -24,7 +24,7 @@ import { NavLink } from "react-router-dom";
 const Tratamento = () => {
   return (
     <>
-      <Container sectionClass="bgHeroComoFunciona" />
+      <Container sectionClass="bgHeroTratamentos" />
 
       <Container mainClass="acc">
         <BoxAnimation>
@@ -472,7 +472,7 @@ const Tratamento = () => {
 
         <CtaAcc
           aText={"Agendar Fisioterapia Pélvica"}
-          href={"#"}
+          href="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar uma avaliação de Fisioterapia Pélvica. Estou buscando a clínica porque…"
           img={whatsappGreen}
         />
       </Container>
@@ -646,7 +646,11 @@ const Tratamento = () => {
           </Accordion>
         </BoxAnimation>
 
-        <CtaAcc aText={"Agendar Acupuntura"} href={"#"} img={whatsappGreen} />
+        <CtaAcc
+          aText={"Agendar Acupuntura"}
+          href="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar uma avaliação de Acupuntura. Estou buscando a clínica porque…"
+          img={whatsappGreen}
+        />
       </Container>
 
       <Container mainClass="acc">
@@ -672,7 +676,11 @@ const Tratamento = () => {
           </Accordion>
         </BoxAnimation>
 
-        <CtaAcc aText={"Agendar Pilates"} href={"#"} img={whatsappGreen} />
+        <CtaAcc
+          aText={"Agendar Pilates"}
+          href="https://wa.me/+5511913112992?text=Olá! Gostaria de saber mais sobre os planos e horários do Pilates. Estou buscando a clínica porque…"
+          img={whatsappGreen}
+        />
       </Container>
 
       <Container
@@ -691,6 +699,7 @@ const Tratamento = () => {
               img={juliana}
               p="Fisioterapeuta especializada em Saúde da Mulher e Instrutora do Método Pilates"
               span="CREFITO-3/226407-F"
+              id="DraJuliana"
             />
           </BoxAnimation>
           <BoxAnimation animation="bottom">
@@ -699,6 +708,7 @@ const Tratamento = () => {
               img={michele}
               p="Fisioterapeuta especializada em Saúde da Mulher, Doula e Educadora Perinatal"
               span="CREFITO-3/221316-F"
+              id="DraMichelle"
             />
           </BoxAnimation>
           <BoxAnimation animation="top">
@@ -707,6 +717,7 @@ const Tratamento = () => {
               img={thais}
               p="Fisioterapeuta especializada em Saúde da Mulher e Mestre em Ginecologia e Obstetrícia"
               span="CREFITO-3/296198-F"
+              id="DraThays"
             />
           </BoxAnimation>
           <BoxAnimation animation="bottom">
@@ -715,6 +726,7 @@ const Tratamento = () => {
               img={cibele}
               p="Fisioterapeuta Acupunturista especializada em Saúde da Mulher e Gestantes"
               span="CREFITO-3/111858-F"
+              id="DraCibele"
             />
           </BoxAnimation>
         </div>
@@ -724,7 +736,10 @@ const Tratamento = () => {
       </Container>
 
       <Container>
-        <CtaCard>
+        <CtaCard
+          googleBtn={true}
+          url="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar um horário para avaliação. Estou buscando a clínica porque…"
+        >
           <p>Prevenção sempre em primeiro lugar!</p>
         </CtaCard>
       </Container>

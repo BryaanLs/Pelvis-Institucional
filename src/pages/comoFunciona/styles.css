@@ -1,9 +1,9 @@
-.bgHeroTratamento {
-  background-image: url(../../assets/img/bgHeroTratamento.png);
-  background-position: center center;
+.bgHeroComoFunciona {
+  background-image: url(../../assets/img/webp/bgComoFuncionaDesktop.webp);
+  background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 60vh;
+  min-height: 100vh;
 }
 .stepsAtendimento {
   border: 2px solid var(--cinza5);
@@ -310,6 +310,7 @@
   width: max-content;
   padding: 1rem 2rem;
   margin: 0 auto;
+  font-weight: bold;
 }
 
 @media (max-width: 1100px) {
@@ -380,6 +381,12 @@
   }
 }
 @media (max-width: 700px) {
+  .bgHeroComoFunciona {
+    background: url(../../assets/img/webp/bgComoFuncionaMobile.webp);
+    background-position: center;
+    background-size: cover;
+  }
+
   .stepsCard span:nth-child(2),
   .stepsCard p,
   .stepsCard a {

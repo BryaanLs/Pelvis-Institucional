@@ -60,10 +60,25 @@ const Footer = () => {
                 href="https://www.instagram.com/pelviefisioterapia?igsh=cTg1d3NxejRnbTNs"
                 target="_blank"
               >
-                <img src={icoInsta} alt="icone do instagram" loading="lazy" />
+                <img
+                  src={icoInsta}
+                  alt="icone do instagram"
+                  loading="lazy"
+                  width="40"
+                  height="40"
+                />
               </a>
-              <a href="https://wa.link/ibbufu" target="_blank">
-                <img src={icoWhats} alt="icone do whatsapp" loading="lazy" />
+              <a
+                href="https://wa.me/+5511913112992?text=Olá! Gostaria de mais informações. Estou buscando a clínica porque…"
+                target="_blank"
+              >
+                <img
+                  src={icoWhats}
+                  alt="icone do whatsapp"
+                  loading="lazy"
+                  width="40"
+                  height="40"
+                />
               </a>
             </nav>
           </div>

@@ -1,10 +1,11 @@
+/* eslint-disable react/jsx-no-target-blank */
 // Estilos
 import "./styles.css";
 
 //Componentes
 import Container from "../../components/container";
 import BoxAnimation from "../../components/boxAnimation";
-import { NavLink } from "react-router-dom";
+
 import CtaCard from "../../components/ctaCard";
 import EspecialidadesCard from "../../components/EspecialidadesCard";
 
@@ -26,7 +27,7 @@ import check from "../../assets/img/svgs/check.svg";
 const ComoFunciona = () => {
   return (
     <>
-      <Container sectionClass="bgHeroTratamento" />
+      <Container sectionClass="bgHeroComoFunciona" />
       <Container mainClass="stepsAtendimento">
         <BoxAnimation animation="opacity">
           <h2>
@@ -66,7 +67,11 @@ const ComoFunciona = () => {
                 possível estimar a duração do tratamento e a frequência
                 adequada.
               </p>
-              <a href="#" className="linkAvaliação" target="_blank">
+              <a
+                href="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar minha avaliação. Estou buscando a clínica porque…"
+                className="linkAvaliação"
+                target="_blank"
+              >
                 Agendar avaliação
                 <img src={whats} alt="logo do whatsapp" width="20" />
               </a>
@@ -98,10 +103,14 @@ const ComoFunciona = () => {
                 biofeedback eletromiográfico, que auxiliam na obtenção dos
                 resultados.
               </p>
-              <NavLink to="ComoFunciona" className="linkTratamentos">
+              <a
+                href="https://wa.me/+5511913112992?text=Olá! Gostaria de tirar algumas dúvidas sobre o tratamento. Estou buscando a clínica porque…"
+                className="linkTratamentos"
+                target="_blank"
+              >
                 Tire suas dúvidas
                 <img src={checklist} alt="logo do whatsapp" width="20" />
-              </NavLink>
+              </a>
             </div>
           </BoxAnimation>
         </div>
@@ -163,7 +172,11 @@ const ComoFunciona = () => {
                 Elaboração de relatórios
               </li>
             </ul>
-            <a href="#" target="_blank" className="ctaBtn2">
+            <a
+              href="https://wa.me/+5511913112992?text=Olá! Gostaria de solicitar um orçamento. Estou buscando a clínica porque…"
+              target="_blank"
+              className="ctaBtn2"
+            >
               Solicitar orçamento
             </a>
           </div>
@@ -230,7 +243,10 @@ const ComoFunciona = () => {
         </div>
       </Container>
       <Container>
-        <CtaCard>
+        <CtaCard
+          googleBtn={true}
+          url="https://wa.me/+5511913112992?text=Olá! Gostaria de agendar um horário para avaliação. Estou buscando a clínica porque…"
+        >
           <p>
             Benefícios duradouros através de mudanças positivas no estilo de
             vida!

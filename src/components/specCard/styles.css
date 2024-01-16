@@ -1,4 +1,5 @@
-.specCard {
+.specCard,
+.specCard a {
   width: max-content;
   height: max-content;
   position: relative;
