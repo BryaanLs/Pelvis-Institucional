@@ -154,9 +154,9 @@ const ComoFunciona = () => {
             <span>Orientamos o passo a passo!</span>
             <p>
               Caso você tenha plano de saúde, pode solicitar o reembolso das
-              suas sessões de Fisioterapia Pélvica. Você precisará do
-              encaminhamento médico contendo seu diagnóstico e nós emitiremos a
-              Nota Fiscal e demais documentos necessários.
+              suas sessões. Você precisará do encaminhamento médico contendo seu
+              diagnóstico e nós emitiremos a Nota Fiscal e demais documentos
+              necessários.
             </p>
             <ul>
               <li>

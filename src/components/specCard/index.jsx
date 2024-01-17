@@ -31,14 +31,12 @@ const SpecCard = ({ h3, p, img, span, id }) => {
             className="descriptionCard"
             style={{ bottom: openCard ? "0px" : "-50%" }}
           >
-            <NavLink to={`/QuemSomos#${id}`}>
-              <h3>
-                <span>Dra.</span>
-                {h3}
-              </h3>
-              <p>{p}</p>
-              <span>{span}</span>
-            </NavLink>
+            <h3>
+              <span>Dra.</span>
+              {h3}
+            </h3>
+            <p>{p}</p>
+            <span>{span}</span>
           </div>
           <button
             onClick={handleClick}
@@ -55,12 +53,14 @@ const SpecCard = ({ h3, p, img, span, id }) => {
           </button>
         </div>
         {!openCard && (
-          <div className="doctorName">
-            <h3>
-              <span>Dra. </span>
-              {h3}
-            </h3>
-          </div>
+          <NavLink to={`/QuemSomos#${id}`}>
+            <div className="doctorName">
+              <h3>
+                <span>Dra. </span>
+                {h3}
+              </h3>
+            </div>
+          </NavLink>
         )}
       </div>
     </>

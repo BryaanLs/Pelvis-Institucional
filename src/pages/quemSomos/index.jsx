@@ -203,7 +203,7 @@ const QuemSomos = () => {
               Fisioterapeuta especializada em Saúde da Mulher, Doula e Educadora
               Perinatal
             </span>
-            <span className="crefito">CREFITO-3 221316-F</span>
+            <span className="crefito">CREFITO-3/221316-F</span>
             <ul>
               <li>
                 Graduada em Fisioterapia pela Universidade de Brasília (UnB);
@@ -242,7 +242,7 @@ const QuemSomos = () => {
               Fisioterapeuta especializada em Saúde da Mulher e Mestre em
               Ginecologia e Obstetrícia
             </span>
-            <span className="crefito">CREFITO-3 296198-F</span>
+            <span className="crefito">CREFITO-3/296198-F</span>
             <ul>
               <li>
                 Graduada em Fisioterapia pela Faculdade de Medicina de Ribeirão
@@ -283,7 +283,7 @@ const QuemSomos = () => {
               Fisioterapeuta Acupunturista especializada em Saúde da Mulher e
               Gestantes
             </span>
-            <span className="crefito">CREFITO-3 111858-F</span>
+            <span className="crefito">CREFITO-3/111858-F</span>
             <ul>
               <li>
                 Graduada em Fisioterapia pelo Centro Universitário São Camilo;

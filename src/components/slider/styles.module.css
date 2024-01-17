@@ -10,8 +10,6 @@
   display: flex;
   align-items: center;
   border-radius: 30px;
-  /* background-color: red; */
-  /* height: auto; */
 }
 
 .containerSlide > div {
@@ -30,7 +28,7 @@
   position: relative;
   border-radius: 30px;
   opacity: 1;
-  transition: opacity 0.8s ease-in, transform 0.8s ease-in-out;
+  transition: opacity 1.2s, transform 1.2s;
 }
 
 .item img {
@@ -106,8 +104,8 @@
 }
 
 .slideItem {
-  opacity: 0.5;
-  transform: scale(0);
+  opacity: 0.4;
+  transform: scale(80%);
 }
 
 .slideActive {
@@ -130,6 +128,10 @@
 @media (max-width: 1100px) {
   .containerSlide {
     height: max-content;
+  }
+
+  .item {
+    transition: opacity 0.6s ease-in-out, transform 0.6s ease-in-out;
   }
 }
 

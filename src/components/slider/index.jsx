@@ -28,7 +28,10 @@ const Slider = () => {
           <div
             ref={contentRef}
             className={s.content}
-            style={{ transform: `translateX(${position}px)` }}
+            style={{
+              transform: `translateX(${position}px)`,
+              transition: "1s ease",
+            }}
           >
             {slides.map((slide, index) => (
               <div
